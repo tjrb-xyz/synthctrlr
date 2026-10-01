@@ -13,7 +13,9 @@ The owner's words that started this repository (2026-10-01):
 | `docs/README.md` | Purpose, the owner's decisions verbatim, the process model, the roadmap, open questions |
 | `docs/DEVICE-MODEL.md` | The synth as seen over SysEx, Scene snapshots, plugin mode, views, the pack, what mazika must change, checks on the synth |
 | `docs/SNAPSHOT-FORMAT.md` | The snapshot file `.jupiter-xm.json`: every field, the content hash, what a reader does |
-| `docs/AUI-REQUIREMENTS.md` | What synthctrlr needs from aui (SC-01…SC-27) |
+| `docs/VALUE-DISPLAY.md` | Showing values as the synth shows them, 1:1: the sweep of the MI, converters, adjusting on the interface |
+| `docs/AUI-REQUIREMENTS.md` | What synthctrlr needs from aui (SC-01…SC-30) |
+| `tools/mi-sweep/` | Reads your own copy of the MI and classifies every parameter's conversion |
 
 The notes come from tjrb-xyz/aui, branch `jupiter-xm`, `examples/jupiter-xm/`, where they were written.
 

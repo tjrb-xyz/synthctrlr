@@ -1,4 +1,4 @@
-> **Source:** copied unchanged from tjrb-xyz/aui, branch `jupiter-xm` (PR #1), `examples/jupiter-xm/README.md`, commit `6426a67`, on 2026-10-01. In the text below, "this example" now means synthctrlr. The owner's quoted words are kept verbatim.
+> **Source:** copied from tjrb-xyz/aui, branch `jupiter-xm` (PR #1), `examples/jupiter-xm/README.md`, commit `6426a67`, on 2026-10-01, then extended in this repository (see its history). In the text below, "this example" now means synthctrlr. The owner's quoted words are kept verbatim.
 
 # Example: jupiter-xm
 
@@ -73,6 +73,13 @@ An editor for the owner's Roland JUPITER-Xm. It drives the real synth over USB M
 > snapshot files are more important
 
 So the snapshot file format is the next piece of work (`SNAPSHOT-FORMAT.md`), and Pro Tools stays left out for now.
+
+**2026-10-01, answering SNAPSHOT-FORMAT §11 choices 1 (System context outside the content hash) and 2 (wire values in the file):**
+
+> 1. yes
+> 2.  sure can we have a converter built in to device actual values to be able to have 1:1 mapping? you can sweep the specs and allow adjustments on the interface itself.
+
+So the file keeps wire values, and the editor converts them to what the synth shows, 1:1, from a sweep of the MI, with adjustments on the interface (`VALUE-DISPLAY.md`).
 - The first skin pack: "Unbranded homage (Recommended)".
 
 The earlier ideas behind this example are logged with dates in `aui-docs/IDEAS.md` on the `owner-ideas` branch:

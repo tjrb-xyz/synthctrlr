@@ -224,7 +224,7 @@ Up to 8 slots, each naming a parameter id from `values` (DEVICE-MODEL §6.5).
 ```
 
 - Keys are the profile's parameter ids, prefixed with `part1.`…`part5.` for part parameters and `scene.` for Scene-wide ones. User-pattern steps are left out (DEVICE-MODEL §4.2).
-- **Each value is the raw wire value,** a whole number in the parameter's `raw` range (DEVICE-MODEL §2.5). The display form (for example −200…+200) comes from the profile, so the file never holds a rounded or unit-dependent number.
+- **Each value is the raw wire value,** a whole number in the parameter's `raw` range (DEVICE-MODEL §2.5). The display form (for example −200…+200) comes from the profile's converters (`VALUE-DISPLAY.md`), so the file never holds a rounded or unit-dependent number.
 - Values exist only for parameters inside `blocks`; none for `omitted`, `missing` or opaque blocks.
 - **On load,** each value is compared with its bytes:
   - **equal:** nothing happens;
@@ -325,9 +325,12 @@ The real block table and a real example wait for the checks on the owner's synth
 
 ## 11. Choices to confirm
 
-These are new in this draft. Each has a default the format already uses:
+These are new in this draft. Each has a default the format already uses. The owner's answers (2026-10-01, verbatim):
 
-1. **System context outside `contentHash`,** with its own `systemHash` (§5).
-2. **Raw wire values in `values`,** not display values (§6).
+> 1. yes
+> 2.  sure can we have a converter built in to device actual values to be able to have 1:1 mapping? you can sweep the specs and allow adjustments on the interface itself.
+
+1. **System context outside `contentHash`,** with its own `systemHash` (§5). **Confirmed by the owner (2026-10-01).**
+2. **Raw wire values in `values`,** not display values (§6). **Confirmed by the owner (2026-10-01),** who asked for a converter built in so the editor shows the synth's own values 1:1 (`VALUE-DISPLAY.md`).
 3. **Bytes split into 32-byte hex lines** for readable diffs (§4.1).
 4. **Unknown keys refused,** except `x-` keys, which are kept (§2).

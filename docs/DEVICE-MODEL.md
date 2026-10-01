@@ -1,4 +1,4 @@
-> **Source:** copied unchanged from tjrb-xyz/aui, branch `jupiter-xm` (PR #1), `examples/jupiter-xm/DEVICE-MODEL.md`, commit `6426a67`, on 2026-10-01. In the text below, "this example" now means synthctrlr. The owner's quoted words are kept verbatim.
+> **Source:** copied from tjrb-xyz/aui, branch `jupiter-xm` (PR #1), `examples/jupiter-xm/DEVICE-MODEL.md`, commit `6426a67`, on 2026-10-01, then extended in this repository (see its history). In the text below, "this example" now means synthctrlr. The owner's quoted words are kept verbatim.
 
 # Device model: Roland JUPITER-Xm editor
 
@@ -224,6 +224,7 @@ Every editable value is data. This needs a v2 of mazika's synth-profile format (
 
 - **`area`** names a base that depends on the part: `temp.tone.analog` for part *n* is `02 1(n−1) 00 00`. One table holds every base. The address is base + offset, with 7-bit carry.
 - **`encoding`** is one of `byte7`, `nibble2` or `nibble4`. **`raw`** is the wire range, and **`display`** maps it to what the person sees, including signed offsets.
+  - The `display` converters, their 1:1 rule and where each comes from are in `VALUE-DISPLAY.md` §3. The MI gives no display for this example's parameter, so the `number` 0–1023 shown above is an assumption until measured (VALUE-DISPLAY §2).
 - **`models`** lists the analog models that use the parameter. The panel shows only those parameters.
   - This is the device model deciding what exists, not a skin hiding controls. It follows mazika's DJ design §4.6 rule that a skin may never "add a control or hide one", and aui's one DOM per theme (AUI-182).
 - **No `cc` here.**
@@ -884,6 +885,14 @@ These belong on mazika's M1.2 hardware checklist ("Jupiter-Xm: its checklist com
 18. **Plugin hosts:**
     - duplicate-track behaviour per host (§5.2);
     - whether a Linux DAW holding rawmidi blocks the plugin (§5.1).
+19. **What the screen shows** (VALUE-DISPLAY §7):
+    - the 55 analog and JUPITER-X parameters the MI gives no display for;
+    - names for the unlabelled lists;
+    - sign, decimals and units;
+    - release-time steps;
+    - which OSC WAVE FORM positions each analog model uses;
+    - anywhere the screen is coarser than the wire;
+    - effect slots per type, if no public list is found.
 
 ---
 

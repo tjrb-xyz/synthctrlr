@@ -1,4 +1,4 @@
-> **Source:** copied unchanged from tjrb-xyz/aui, branch `jupiter-xm` (PR #1), `examples/jupiter-xm/AUI-REQUIREMENTS.md`, commit `6426a67`, on 2026-10-01. In the text below, "this example" now means synthctrlr. The owner's quoted words are kept verbatim.
+> **Source:** copied from tjrb-xyz/aui, branch `jupiter-xm` (PR #1), `examples/jupiter-xm/AUI-REQUIREMENTS.md`, commit `6426a67`, on 2026-10-01, then extended in this repository (see its history). In the text below, "this example" now means synthctrlr. The owner's quoted words are kept verbatim.
 
 # What synthctrlr needs from aui
 
@@ -84,6 +84,16 @@ Ordered by the owner's priorities: see the whole Scene, edit its parts, save and
 | SC-25 | **Material tokens:** `glass.*` for windows and LCDs, `panel.*` for faceplates | IDEAS 2026-09-29 (glass is the enclosure, analog is the instrument) |
 | SC-26 | **A headless pack API:** schema, `validate`, `apply` / `unapply`, `diff`, contrast check, live reload. Plus an inspect mode that shows a part's id and the tokens that style it. | IDEAS 2026-09-30 |
 | SC-27 | **Image-based controls**, if a pack wants bitmap knobs. The first pack is an unbranded homage and prefers SVG, so this can wait. | AUI-138 (open) |
+
+## 4a. Device values (added 2026-10-01, synthctrlr)
+
+The editor shows every value as the synth's screen shows it, 1:1, and lets the person adjust a conversion on the interface (`VALUE-DISPLAY.md`). aui shows the text; it never converts.
+
+| Id | Need | aui requirement |
+|---|---|---|
+| SC-28 | **Value text from the app both ways:** a control shows text from an app-supplied format function and reads typed entry with an app-supplied parse function. A rejected entry shows the app's reason. | New; extends SC-06 |
+| SC-29 | **Source marks** on any control: "assumed", "adjusted", "not known". aui supplies the shapes; the app supplies the words. | New; same pattern as SC-07 |
+| SC-30 | **Editable list:** a short table of rows (wire value → text) with add, remove and reorder, reachable by keyboard. Used for value-name lists and the "Match the synth" pairs. | New |
 
 **Inside mazika,** synth pages follow mazika's "Sticker Deck only" rule (ux-spec §6.4.4 rule 9). The pack applies in synthctrlr's plugin and standalone hosts unless mazika changes that rule (DEVICE-MODEL §7, §9).
 
