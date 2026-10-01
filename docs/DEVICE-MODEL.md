@@ -4,6 +4,8 @@
 
 **Status:** draft 2.2, 2026-10-01. Design only; nothing is built.
 
+**Since 2026-10-01 synthctrlr is generic** (`CONTROLLER-BUILDER.md`). This file is now the design notes for the first device profile, `roland.jupiter-xm`. The descriptor of §2.5 is generalised in CONTROLLER-BUILDER §2.4, and the snapshot file in `SNAPSHOT-FORMAT.md` (draft 2).
+
 - Draft 2 was reviewed against Roland's MIDI Implementation, the research, mazika's spec and the owner's decisions. Draft 2.1 applies the 72 confirmed findings.
 - Draft 2.2 records the owner's answers to four open questions (§11): recall confirmation, engines by reference, mazika's browser core first, and the first pack as an unbranded homage.
 - The owner's decisions are quoted in full in `README.md`.
@@ -835,6 +837,7 @@ The research read mazika@36bde22. These are changes for mazika's session to make
     - "audition" stays mazika's word for a take, so the library's send-without-saving is "Try";
     - favourites use `Star`;
     - no "Record" labels.
+12. **A generic device profile** (added 2026-10-01). synthctrlr's device profile format (CONTROLLER-BUILDER §2) covers any synth or MIDI device: CC, NRPN and SysEx addressing, parts, engines, converters and a snapshot recipe. It is a candidate for mazika's synth profile v2 (item 3), so mazika and synthctrlr share one format.
 
 ---
 

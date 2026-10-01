@@ -80,6 +80,15 @@ So the snapshot file format is the next piece of work (`SNAPSHOT-FORMAT.md`), an
 > 2.  sure can we have a converter built in to device actual values to be able to have 1:1 mapping? you can sweep the specs and allow adjustments on the interface itself.
 
 So the file keeps wire values, and the editor converts them to what the synth shows, 1:1, from a sweep of the MI, with adjustments on the interface (`VALUE-DISPLAY.md`).
+
+**2026-10-01, answering SNAPSHOT-FORMAT §11 choices 3 and 4, then making synthctrlr generic:**
+
+> 3. sure
+> 4. ok
+> this process needs to be abstract for every synth through a wizard configured manually or via mcp
+> we need an mcp ability to create controller of different synths or midi devices
+
+So synthctrlr builds controllers for any synth or MIDI device from data profiles, through a wizard or an MCP server, and the Jupiter-Xm is its first profile (`CONTROLLER-BUILDER.md`).
 - The first skin pack: "Unbranded homage (Recommended)".
 
 The earlier ideas behind this example are logged with dates in `aui-docs/IDEAS.md` on the `owner-ideas` branch:
@@ -133,6 +142,7 @@ The owner's rule: **the web view is separate from the main thread, and the main 
      - or through its analog outputs into an interface (DEVICE-MODEL §6.6).
    - aui supplies the views. The device model and the snapshot format live in this example.
 2. **Later: a synth controller device.** Once dsper (tjrb-xyz/dsper) is wired and works properly, build a generic synth controller device that holds *models*; the Jupiter-Xm becomes its first model.
+   - **Brought forward (2026-10-01):** synthctrlr is generic from the start. Device profiles, built by a wizard or over MCP, are the models (`CONTROLLER-BUILDER.md`). dsper still comes later, for sound.
 3. **A separate repository: `tjrb-xyz/synthctrlr`** (named "synth-modeller" at first). The owner created it on 2026-10-01, before aui has the UI elements this example needs (DEVICE-MODEL §8; `AUI-REQUIREMENTS.md`). synthctrlr's session builds on these notes.
 
 ## Open questions
@@ -155,3 +165,5 @@ The full list is in DEVICE-MODEL §11.
    - The owner put snapshot files first ("snapshot files are more important"). `SNAPSHOT-FORMAT.md` specifies the JSON file. Roland-compatible files remain open and are not designed yet.
 2. **Pro Tools (AAX):** left out at first by default. Needed early? Comes after snapshot files.
 3. **Expansions and JUNO-60** on the owner's synth: only matters once the deferred measuring happens.
+4. **Value display** (VALUE-DISPLAY §9): no mark on values from the MI; adjustments apply to the whole definition; adjustments live in the user's folder.
+5. **Controllers for any device** (CONTROLLER-BUILDER §8): whether profiles built from the midi.guide dataset (CC BY-SA 4.0) may be shipped; where MCP runs first; whether profiles built from a maker's MIDI document may be committed and shipped.

@@ -2,6 +2,8 @@
 
 **Status:** draft 1, 2026-10-01. Design only; nothing is built.
 
+**Generic since 2026-10-01** (`CONTROLLER-BUILDER.md`): the converters, the 1:1 check and "Adjust display…" apply to every device profile. "Match the synth" is "Match the device". The Jupiter-Xm and its MI are the first case, and `tools/mi-sweep` is the first version of the `roland-mi` importer.
+
 The owner's words (2026-10-01, verbatim), answering SNAPSHOT-FORMAT §11 choices 1 and 2:
 
 > 1. yes

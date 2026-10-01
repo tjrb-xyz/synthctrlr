@@ -95,6 +95,16 @@ The editor shows every value as the synth's screen shows it, 1:1, and lets the p
 | SC-29 | **Source marks** on any control: "assumed", "adjusted", "not known". aui supplies the shapes; the app supplies the words. | New; same pattern as SC-07 |
 | SC-30 | **Editable list:** a short table of rows (wire value → text) with add, remove and reorder, reachable by keyboard. Used for value-name lists and the "Match the synth" pairs. | New |
 
+## 4b. Controllers for any device (added 2026-10-01, synthctrlr)
+
+synthctrlr builds controllers for any synth or MIDI device from data profiles, through a wizard or an MCP server (`CONTROLLER-BUILDER.md`).
+
+| Id | Need | aui requirement |
+|---|---|---|
+| SC-31 | **Wizard:** steps with a state each (done, needs attention, waiting for the device), resumable, reachable by keyboard. | New |
+| SC-32 | **Large editable table:** hundreds of rows (about 600 parameter definitions on the Jupiter-Xm), only visible rows rendered, filter and sort, inline editing with validation messages, reachable by keyboard. SC-30 is its small case. | New |
+| SC-33 | **Views without a device:** render a view generated from a profile with sample values, for the wizard's preview and as an image for MCP's `profiles.preview`. | New; related to SC-12, SC-26 |
+
 **Inside mazika,** synth pages follow mazika's "Sticker Deck only" rule (ux-spec §6.4.4 rule 9). The pack applies in synthctrlr's plugin and standalone hosts unless mazika changes that rule (DEVICE-MODEL §7, §9).
 
 ## 5. Gates
