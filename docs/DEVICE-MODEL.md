@@ -431,6 +431,8 @@ These come to 7 blocks and about 0.37 KB. They affect every Scene, so they are s
 
 ### 4.2 File format
 
+The exact format is specified in `SNAPSHOT-FORMAT.md` (draft 1, 2026-10-01). Where the two differ, that file wins.
+
 - **One JSON text file per snapshot:** `<name>.jupiter-xm.json`. It is also mazika's sound export format for this profile (§9), so mazika and the plugin share one file.
 - **`blocks`** is the authoritative part: a list of `{address, size, bytes}`, sorted by address.
   - Each size is the size that answered on the synth it was captured from. Sizes come from a per-firmware table in the profile, settled by measuring (§10 item 2).

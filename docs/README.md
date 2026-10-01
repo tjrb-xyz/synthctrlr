@@ -67,6 +67,12 @@ An editor for the owner's Roland JUPITER-Xm. It drives the real synth over USB M
 - Reload confirmation: "Ask every time (Recommended)".
 - Drum kits, vocoder and expansions saved by reference: "Enough for now (Recommended)".
 - mazika before native MIDI: "Yes, start there (Recommended)".
+
+**2026-10-01, in synthctrlr's session, asked whether snapshot files or Pro Tools (AAX) comes first:**
+
+> snapshot files are more important
+
+So the snapshot file format is the next piece of work (`SNAPSHOT-FORMAT.md`), and Pro Tools stays left out for now.
 - The first skin pack: "Unbranded homage (Recommended)".
 
 The earlier ideas behind this example are logged with dates in `aui-docs/IDEAS.md` on the `owner-ideas` branch:
@@ -139,5 +145,6 @@ The full list is in DEVICE-MODEL §11.
 **Still open:**
 
 1. **Snapshot files:** one JSON file per Scene (raw blocks plus readable values), or also Roland-compatible files later?
-2. **Pro Tools (AAX):** left out at first by default. Needed early?
+   - The owner put snapshot files first ("snapshot files are more important"). `SNAPSHOT-FORMAT.md` specifies the JSON file. Roland-compatible files remain open and are not designed yet.
+2. **Pro Tools (AAX):** left out at first by default. Needed early? Comes after snapshot files.
 3. **Expansions and JUNO-60** on the owner's synth: only matters once the deferred measuring happens.
