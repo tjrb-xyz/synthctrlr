@@ -1,0 +1,5428 @@
+{
+  "at": "2026-10-30",
+  "entries": [
+    {
+      "display": {
+        "kind": "identity",
+        "source": "convention",
+        "unit": ""
+      },
+      "evidence": [
+        {
+          "page": 6,
+          "param": "Mkb MSB",
+          "printed": "OFF, 0–127",
+          "source": "pg06",
+          "where": "SCENE ZONE"
+        },
+        {
+          "page": 6,
+          "param": "Mkb LSB",
+          "printed": "OFF, 0–127",
+          "source": "pg06",
+          "where": "SCENE ZONE"
+        }
+      ],
+      "name": "Scene BS MSB (CC# 0)",
+      "raw": [
+        0,
+        127
+      ],
+      "table": "Setup",
+      "why": "The guide shows bank select numbers on this synth as 0–127 (the master keyboard's MSB and LSB)."
+    },
+    {
+      "display": {
+        "kind": "identity",
+        "source": "convention",
+        "unit": ""
+      },
+      "evidence": [
+        {
+          "page": 6,
+          "param": "Mkb MSB",
+          "printed": "OFF, 0–127",
+          "source": "pg06",
+          "where": "SCENE ZONE"
+        },
+        {
+          "page": 6,
+          "param": "Mkb LSB",
+          "printed": "OFF, 0–127",
+          "source": "pg06",
+          "where": "SCENE ZONE"
+        }
+      ],
+      "name": "Scene BS LSB (CC# 32)",
+      "raw": [
+        0,
+        127
+      ],
+      "table": "Setup",
+      "why": "As Scene BS MSB."
+    },
+    {
+      "display": {
+        "kind": "offset",
+        "offset": 1,
+        "plus": false,
+        "source": "convention",
+        "unit": ""
+      },
+      "evidence": [
+        {
+          "page": 6,
+          "param": "Mkb PC",
+          "printed": "OFF, 1–128",
+          "source": "pg06",
+          "where": "SCENE ZONE"
+        }
+      ],
+      "name": "Scene PC (PC)",
+      "raw": [
+        0,
+        127
+      ],
+      "table": "Setup",
+      "why": "The guide shows program change numbers on this synth as 1–128 (the master keyboard's PC)."
+    },
+    {
+      "checks": [
+        "what the screen shows at 0, 64 and 127"
+      ],
+      "display": {
+        "kind": "identity",
+        "source": "convention",
+        "unit": ""
+      },
+      "name": "USB Audio Input Level",
+      "raw": [
+        0,
+        127
+      ],
+      "table": "System Common",
+      "why": "The System pages (34 on) were not readable."
+    },
+    {
+      "checks": [
+        "what the screen shows at 0, 64 and 127"
+      ],
+      "display": {
+        "kind": "identity",
+        "source": "convention",
+        "unit": ""
+      },
+      "name": "USB Audio Output Level",
+      "raw": [
+        0,
+        127
+      ],
+      "table": "System Common",
+      "why": "As USB Audio Input Level."
+    },
+    {
+      "checks": [
+        "what the screen shows at 0, 50 and 100"
+      ],
+      "display": {
+        "kind": "identity",
+        "source": "convention",
+        "unit": ""
+      },
+      "name": "(*)Aftertouch Sens",
+      "raw": [
+        0,
+        100
+      ],
+      "table": "System Control",
+      "why": "The System pages (34 on) were not readable."
+    },
+    {
+      "display": {
+        "kind": "identity",
+        "source": "guide",
+        "unit": ""
+      },
+      "evidence": [
+        {
+          "page": 11,
+          "param": "Drive",
+          "printed": "0–127",
+          "source": "pg06",
+          "where": "SCENE EFFECT: OD"
+        }
+      ],
+      "name": "Drive",
+      "raw": [
+        0,
+        127
+      ],
+      "table": "Drive"
+    },
+    {
+      "display": {
+        "kind": "text",
+        "source": "mi"
+      },
+      "name": "NAME 1",
+      "raw": [
+        32,
+        127
+      ],
+      "table": "Scene Common",
+      "why": "The MI gives NAME 2–16 as 32–127 [ASCII]; NAME 1 is the same field."
+    },
+    {
+      "display": {
+        "kind": "identity",
+        "source": "guide",
+        "unit": ""
+      },
+      "evidence": [
+        {
+          "page": 4,
+          "param": "VOICE RSRV Part1–R",
+          "printed": "0–10",
+          "source": "pg06",
+          "where": "SCENE COMMON"
+        }
+      ],
+      "name": "Voice Reserve Layer(1)",
+      "raw": [
+        0,
+        10
+      ],
+      "table": "Scene Common"
+    },
+    {
+      "display": {
+        "kind": "identity",
+        "source": "convention",
+        "unit": ""
+      },
+      "evidence": [
+        {
+          "page": 6,
+          "param": "Mkb MSB",
+          "printed": "OFF, 0–127",
+          "source": "pg06",
+          "where": "SCENE ZONE"
+        },
+        {
+          "page": 6,
+          "param": "Mkb LSB",
+          "printed": "OFF, 0–127",
+          "source": "pg06",
+          "where": "SCENE ZONE"
+        }
+      ],
+      "name": "Tone Bank Select MSB (CC#0)",
+      "raw": [
+        0,
+        127
+      ],
+      "table": "Scene Part",
+      "why": "As Scene BS MSB."
+    },
+    {
+      "display": {
+        "kind": "identity",
+        "source": "convention",
+        "unit": ""
+      },
+      "evidence": [
+        {
+          "page": 6,
+          "param": "Mkb MSB",
+          "printed": "OFF, 0–127",
+          "source": "pg06",
+          "where": "SCENE ZONE"
+        },
+        {
+          "page": 6,
+          "param": "Mkb LSB",
+          "printed": "OFF, 0–127",
+          "source": "pg06",
+          "where": "SCENE ZONE"
+        }
+      ],
+      "name": "Tone Bank Select LSB (CC#32)",
+      "raw": [
+        0,
+        127
+      ],
+      "table": "Scene Part",
+      "why": "As Scene BS MSB."
+    },
+    {
+      "display": {
+        "kind": "offset",
+        "offset": 1,
+        "plus": false,
+        "source": "convention",
+        "unit": ""
+      },
+      "evidence": [
+        {
+          "page": 6,
+          "param": "Mkb PC",
+          "printed": "OFF, 1–128",
+          "source": "pg06",
+          "where": "SCENE ZONE"
+        }
+      ],
+      "name": "Tone Program Change (PC)",
+      "raw": [
+        0,
+        127
+      ],
+      "table": "Scene Part",
+      "why": "As Scene PC."
+    },
+    {
+      "display": {
+        "kind": "identity",
+        "source": "guide",
+        "unit": ""
+      },
+      "evidence": [
+        {
+          "page": 4,
+          "param": "Part Level",
+          "printed": "0–127",
+          "source": "pg06",
+          "where": "SCENE PART"
+        }
+      ],
+      "name": "Part Level (CC#7)",
+      "raw": [
+        0,
+        127
+      ],
+      "table": "Scene Part"
+    },
+    {
+      "display": {
+        "kind": "identity",
+        "source": "guide",
+        "unit": ""
+      },
+      "evidence": [
+        {
+          "page": 4,
+          "param": "Cho Send",
+          "printed": "0–127",
+          "source": "pg06",
+          "where": "SCENE PART"
+        }
+      ],
+      "name": "Part Chorus Send Level (CC#93)",
+      "raw": [
+        0,
+        127
+      ],
+      "table": "Scene Part"
+    },
+    {
+      "display": {
+        "kind": "identity",
+        "source": "guide",
+        "unit": ""
+      },
+      "evidence": [
+        {
+          "page": 4,
+          "param": "Rev Send",
+          "printed": "0–127",
+          "source": "pg06",
+          "where": "SCENE PART"
+        }
+      ],
+      "name": "Part Reverb Send Level (CC#91)",
+      "raw": [
+        0,
+        127
+      ],
+      "table": "Scene Part"
+    },
+    {
+      "display": {
+        "kind": "identity",
+        "source": "guide",
+        "unit": ""
+      },
+      "evidence": [
+        {
+          "page": 4,
+          "param": "Delay Send",
+          "printed": "0–127",
+          "source": "pg06",
+          "where": "SCENE PART"
+        }
+      ],
+      "name": "Part Delay Send Level",
+      "raw": [
+        0,
+        127
+      ],
+      "table": "Scene Part"
+    },
+    {
+      "display": {
+        "kind": "identity",
+        "source": "guide",
+        "unit": ""
+      },
+      "evidence": [
+        {
+          "page": 6,
+          "param": "KBD Fixed Velo",
+          "printed": "1–127",
+          "source": "pg06",
+          "where": "SCENE PART"
+        }
+      ],
+      "name": "Keyboard Fixed Velocity",
+      "raw": [
+        1,
+        127
+      ],
+      "table": "Scene Part"
+    },
+    {
+      "display": {
+        "kind": "note",
+        "lowest": "C-1",
+        "source": "guide"
+      },
+      "evidence": [
+        {
+          "page": 6,
+          "param": "Key Rng Low",
+          "printed": "C-1–G9",
+          "source": "pg06",
+          "where": "SCENE ZONE"
+        }
+      ],
+      "name": "Keyboard Range Lower",
+      "raw": [
+        0,
+        127
+      ],
+      "table": "Scene Zone"
+    },
+    {
+      "display": {
+        "kind": "note",
+        "lowest": "C-1",
+        "source": "guide"
+      },
+      "evidence": [
+        {
+          "page": 6,
+          "param": "Key Rng Upp",
+          "printed": "C-1–G9",
+          "source": "pg06",
+          "where": "SCENE ZONE"
+        }
+      ],
+      "name": "Keyboard Range Upper",
+      "raw": [
+        0,
+        127
+      ],
+      "table": "Scene Zone"
+    },
+    {
+      "display": {
+        "kind": "identity",
+        "source": "guide",
+        "unit": ""
+      },
+      "evidence": [
+        {
+          "page": 6,
+          "param": "Key Fade Low",
+          "printed": "0–127",
+          "source": "pg06",
+          "where": "SCENE ZONE"
+        }
+      ],
+      "name": "Keyboard Fade Width Lower",
+      "raw": [
+        0,
+        127
+      ],
+      "table": "Scene Zone"
+    },
+    {
+      "display": {
+        "kind": "identity",
+        "source": "guide",
+        "unit": ""
+      },
+      "evidence": [
+        {
+          "page": 6,
+          "param": "Key Fade Upp",
+          "printed": "0–127",
+          "source": "pg06",
+          "where": "SCENE ZONE"
+        }
+      ],
+      "name": "Keyboard Fade Width Upper",
+      "raw": [
+        0,
+        127
+      ],
+      "table": "Scene Zone"
+    },
+    {
+      "display": {
+        "kind": "identity",
+        "source": "guide",
+        "unit": ""
+      },
+      "evidence": [
+        {
+          "page": 6,
+          "param": "Velo Rng Low",
+          "printed": "1–127",
+          "source": "pg06",
+          "where": "SCENE ZONE"
+        }
+      ],
+      "name": "Velocity Range Lower",
+      "raw": [
+        1,
+        127
+      ],
+      "table": "Scene Zone"
+    },
+    {
+      "display": {
+        "kind": "identity",
+        "source": "guide",
+        "unit": ""
+      },
+      "evidence": [
+        {
+          "page": 6,
+          "param": "Velo Rng Upp",
+          "printed": "1–127",
+          "source": "pg06",
+          "where": "SCENE ZONE"
+        }
+      ],
+      "name": "Velocity Range Upper",
+      "raw": [
+        1,
+        127
+      ],
+      "table": "Scene Zone"
+    },
+    {
+      "display": {
+        "kind": "identity",
+        "source": "guide",
+        "unit": ""
+      },
+      "evidence": [
+        {
+          "page": 6,
+          "param": "Velo FadeLow",
+          "printed": "0–127",
+          "source": "pg06",
+          "where": "SCENE ZONE"
+        }
+      ],
+      "name": "Velocity Fade Width Lower",
+      "raw": [
+        0,
+        127
+      ],
+      "table": "Scene Zone"
+    },
+    {
+      "display": {
+        "kind": "identity",
+        "source": "guide",
+        "unit": ""
+      },
+      "evidence": [
+        {
+          "page": 6,
+          "param": "Velo FadeUpp",
+          "printed": "0–127",
+          "source": "pg06",
+          "where": "SCENE ZONE"
+        }
+      ],
+      "name": "Velocity Fade Width Upper",
+      "raw": [
+        0,
+        127
+      ],
+      "table": "Scene Zone"
+    },
+    {
+      "display": {
+        "kind": "note",
+        "lowest": "C-1",
+        "source": "guide"
+      },
+      "evidence": [
+        {
+          "page": 11,
+          "param": "In Range Low",
+          "printed": "C-1–G9",
+          "source": "pg06",
+          "where": "ARP COMMON"
+        }
+      ],
+      "name": "Keyboard Input Range Lower",
+      "raw": [
+        0,
+        127
+      ],
+      "table": "Arpeggio Common"
+    },
+    {
+      "display": {
+        "kind": "note",
+        "lowest": "C-1",
+        "source": "guide"
+      },
+      "evidence": [
+        {
+          "page": 11,
+          "param": "In Range Up",
+          "printed": "C-1–G9",
+          "source": "pg06",
+          "where": "ARP COMMON"
+        }
+      ],
+      "name": "Keyboard Input Range Upper",
+      "raw": [
+        0,
+        127
+      ],
+      "table": "Arpeggio Common"
+    },
+    {
+      "conflict": "The MI shows wire 0–65 as 0–255, which cannot be 1:1. The guide shows 00–65.",
+      "display": {
+        "kind": "identity",
+        "pad": 2,
+        "source": "guide",
+        "unit": ""
+      },
+      "evidence": [
+        {
+          "page": 11,
+          "param": "Type",
+          "printed": "00–65",
+          "source": "pg06",
+          "where": "ARP COMMON"
+        }
+      ],
+      "name": "Original Type No.",
+      "raw": [
+        0,
+        65
+      ],
+      "replaces": "mi",
+      "table": "Arpeggio Common"
+    },
+    {
+      "conflict": "The MI shows wire 0–65 as 0–255, which cannot be 1:1. The guide shows 00–65.",
+      "display": {
+        "kind": "identity",
+        "pad": 2,
+        "source": "guide",
+        "unit": ""
+      },
+      "evidence": [
+        {
+          "page": 11,
+          "param": "Rytm",
+          "printed": "00–65",
+          "source": "pg06",
+          "where": "ARP COMMON"
+        }
+      ],
+      "name": "Original Rhythm No.",
+      "raw": [
+        0,
+        65
+      ],
+      "replaces": "mi",
+      "table": "Arpeggio Common"
+    },
+    {
+      "checks": [
+        "what the screen shows at 0, 1, 65",
+        "whether values above 65 are accepted"
+      ],
+      "conflict": "The MI's wire range is 0–65; the guide prints 000–111, and its style list runs 000–128. Shown as the wire value until measured.",
+      "evidence": [
+        {
+          "page": 13,
+          "param": "I-ARP Style",
+          "printed": "000–111",
+          "source": "pg06",
+          "where": "ARP PART"
+        },
+        {
+          "page": 14,
+          "param": "I-ARP Style",
+          "printed": "129 names, 000–128",
+          "source": "pg06",
+          "where": "Style List"
+        }
+      ],
+      "name": "I-Arp Style",
+      "raw": [
+        0,
+        65
+      ],
+      "table": "Arpeggio Part"
+    },
+    {
+      "checks": [
+        "what the screen shows at 0, 1, 64 and 65"
+      ],
+      "conflict": "The MI's wire range is 0–255; the guide shows OFF and 1–64. Shown as the wire value until measured.",
+      "evidence": [
+        {
+          "page": 13,
+          "param": "Probability Style",
+          "printed": "OFF, 1–64",
+          "source": "pg06",
+          "where": "ARP PART"
+        },
+        {
+          "page": 15,
+          "param": "Probability Style",
+          "printed": "64 names, 001–064",
+          "source": "pg06",
+          "where": "Style List"
+        }
+      ],
+      "name": "Probability Style",
+      "raw": [
+        0,
+        255
+      ],
+      "table": "Arpeggio Part"
+    },
+    {
+      "display": {
+        "kind": "identity",
+        "source": "convention",
+        "unit": ""
+      },
+      "name": "SymReso Depth",
+      "raw": [
+        0,
+        127
+      ],
+      "table": "Sympathetic Resonance",
+      "why": "The RD-PIANO pages (20 on) were not readable."
+    },
+    {
+      "display": {
+        "kind": "identity",
+        "source": "convention",
+        "unit": ""
+      },
+      "name": "Cabinet Resonance",
+      "raw": [
+        0,
+        127
+      ],
+      "table": "Sympathetic Resonance",
+      "why": "As SymReso Depth."
+    },
+    {
+      "display": {
+        "kind": "identity",
+        "source": "convention",
+        "unit": ""
+      },
+      "name": "EXZ",
+      "raw": [
+        0,
+        65535
+      ],
+      "table": "Model Bank Assign",
+      "why": "An expansion's number, not a value a person turns."
+    },
+    {
+      "display": {
+        "kind": "identity",
+        "source": "convention",
+        "unit": ""
+      },
+      "name": "DataBlock0(1)",
+      "raw": [
+        0,
+        255
+      ],
+      "table": "USRDATABLK",
+      "why": "A byte of a user data block, not a value a person turns."
+    },
+    {
+      "display": {
+        "kind": "identity",
+        "source": "guide",
+        "unit": ""
+      },
+      "evidence": [
+        {
+          "page": 19,
+          "param": "LFO RATE",
+          "printed": "0–1023",
+          "source": "pg06",
+          "where": "JUPITER-8"
+        },
+        {
+          "page": 20,
+          "param": "LFO RATE",
+          "printed": "0–1023",
+          "source": "pg06",
+          "where": "JUNO-106"
+        },
+        {
+          "page": 20,
+          "param": "LFO RATE",
+          "printed": "0–1023",
+          "source": "pg03",
+          "where": "JX-8P"
+        },
+        {
+          "page": 17,
+          "param": "LFO RATE",
+          "printed": "0–1023",
+          "source": "pgxm01",
+          "where": "SH-101"
+        }
+      ],
+      "name": "LFO RATE",
+      "raw": [
+        0,
+        1023
+      ],
+      "table": "MDLSYN0"
+    },
+    {
+      "display": {
+        "kind": "identity",
+        "source": "guide",
+        "unit": ""
+      },
+      "evidence": [
+        {
+          "page": 19,
+          "param": "LFO DELAY TIME",
+          "printed": "0–1023",
+          "source": "pg06",
+          "where": "JUPITER-8"
+        },
+        {
+          "page": 20,
+          "param": "LFO DELAY TIME",
+          "printed": "0–1023",
+          "source": "pg06",
+          "where": "JUNO-106"
+        },
+        {
+          "page": 20,
+          "param": "LFO DELAY TIME",
+          "printed": "0–1023",
+          "source": "pg03",
+          "where": "JX-8P"
+        }
+      ],
+      "name": "LFO DELAY TIME",
+      "raw": [
+        0,
+        1023
+      ],
+      "table": "MDLSYN0"
+    },
+    {
+      "display": {
+        "kind": "identity",
+        "source": "guide",
+        "unit": ""
+      },
+      "evidence": [
+        {
+          "page": 19,
+          "param": "LOW FREQ",
+          "printed": "0–127",
+          "source": "pg06",
+          "where": "JUPITER-8"
+        }
+      ],
+      "name": "OSC1 LOW FREQ PITCH",
+      "raw": [
+        0,
+        127
+      ],
+      "table": "MDLSYN0"
+    },
+    {
+      "display": {
+        "kind": "identity",
+        "source": "guide",
+        "unit": ""
+      },
+      "evidence": [
+        {
+          "page": 19,
+          "param": "PULSE WIDTH MOD",
+          "printed": "0–127",
+          "source": "pg06",
+          "where": "JUPITER-8"
+        },
+        {
+          "page": 20,
+          "param": "PULSE WIDTH MOD",
+          "printed": "0–127",
+          "source": "pg06",
+          "where": "JUNO-106"
+        },
+        {
+          "page": 17,
+          "param": "PULSE WIDTH MOD",
+          "printed": "0–127",
+          "source": "pgxm01",
+          "where": "SH-101"
+        }
+      ],
+      "name": "OSC1 PULSE WIDTH",
+      "raw": [
+        0,
+        127
+      ],
+      "table": "MDLSYN0"
+    },
+    {
+      "display": {
+        "kind": "identity",
+        "source": "guide",
+        "unit": ""
+      },
+      "evidence": [
+        {
+          "page": 19,
+          "param": "CROSS MOD",
+          "printed": "0–10800",
+          "source": "pg06",
+          "where": "JUPITER-8"
+        }
+      ],
+      "name": "MOD DEPTH",
+      "raw": [
+        0,
+        10800
+      ],
+      "table": "MDLSYN0"
+    },
+    {
+      "display": {
+        "kind": "identity",
+        "source": "guide",
+        "unit": ""
+      },
+      "evidence": [
+        {
+          "page": 19,
+          "param": "OSC1 LEVEL",
+          "printed": "0–255",
+          "source": "pg06",
+          "where": "JUPITER-8"
+        },
+        {
+          "page": 20,
+          "param": "SUB LEVEL",
+          "printed": "0–255",
+          "source": "pg06",
+          "where": "JUNO-106"
+        },
+        {
+          "page": 20,
+          "param": "OSC1 LEVEL",
+          "printed": "0–255",
+          "source": "pg06",
+          "where": "JX-8P"
+        },
+        {
+          "page": 17,
+          "param": "PW LEVEL, SAW LEVEL, SUB OSC LEVEL",
+          "printed": "0–255",
+          "source": "pgxm01",
+          "where": "SH-101"
+        }
+      ],
+      "name": "OSC1 LEVEL",
+      "raw": [
+        0,
+        255
+      ],
+      "table": "MDLSYN0"
+    },
+    {
+      "display": {
+        "kind": "identity",
+        "source": "guide",
+        "unit": ""
+      },
+      "evidence": [
+        {
+          "page": 20,
+          "param": "NOISE LEVEL",
+          "printed": "0–255",
+          "source": "pg06",
+          "where": "JUNO-106"
+        },
+        {
+          "page": 17,
+          "param": "NOISE LEVEL",
+          "printed": "0–255",
+          "source": "pgxm01",
+          "where": "SH-101"
+        }
+      ],
+      "name": "NOISE LEVEL",
+      "raw": [
+        0,
+        255
+      ],
+      "table": "MDLSYN0"
+    },
+    {
+      "display": {
+        "kind": "identity",
+        "source": "guide",
+        "unit": ""
+      },
+      "evidence": [
+        {
+          "page": 20,
+          "param": "MIXER DYNAMICS",
+          "printed": "0–3",
+          "source": "pg06",
+          "where": "JX-8P"
+        }
+      ],
+      "name": "MIXER DYNAMICS",
+      "raw": [
+        0,
+        3
+      ],
+      "table": "MDLSYN0",
+      "why": "The MI gives no names; the guide shows plain numbers."
+    },
+    {
+      "checks": [
+        "which of wire 0–3 is JP, R, M and S"
+      ],
+      "evidence": [
+        {
+          "page": 19,
+          "param": "VINTAGE FLT TYPE",
+          "printed": "JP, M, S",
+          "source": "pg06",
+          "where": "JUPITER-8"
+        },
+        {
+          "page": 20,
+          "param": "VINTAGE FLT TYPE",
+          "printed": "R, M, S",
+          "source": "pg06",
+          "where": "JUNO-106"
+        },
+        {
+          "page": 20,
+          "param": "VINTAGE FLT TYPE",
+          "printed": "R, M, S",
+          "source": "pg03",
+          "where": "JX-8P"
+        },
+        {
+          "page": 17,
+          "param": "VINTAGE FLT TYPE",
+          "printed": "R, M, S",
+          "source": "pgxm01",
+          "where": "SH-101"
+        },
+        {
+          "page": 0,
+          "param": "FILTER TYPE",
+          "printed": "R, M, S (wire 0–2)",
+          "source": "mi106",
+          "where": "MDLJPX"
+        }
+      ],
+      "name": "FILTER TYPE",
+      "raw": [
+        0,
+        3
+      ],
+      "table": "MDLSYN0",
+      "why": "The names are known (JP, R, M, S), but not which wire value is which. Shown as the wire value until matched."
+    },
+    {
+      "display": {
+        "kind": "identity",
+        "source": "guide",
+        "unit": ""
+      },
+      "evidence": [
+        {
+          "page": 20,
+          "param": "HPF-STEP",
+          "printed": "0–3",
+          "source": "pg06",
+          "where": "JUNO-106"
+        },
+        {
+          "page": 20,
+          "param": "HPF-STEP",
+          "printed": "0–3",
+          "source": "pg03",
+          "where": "JX-8P"
+        }
+      ],
+      "name": "FILTER HPF STEP",
+      "raw": [
+        0,
+        3
+      ],
+      "table": "MDLSYN0"
+    },
+    {
+      "display": {
+        "kind": "identity",
+        "source": "guide",
+        "unit": ""
+      },
+      "evidence": [
+        {
+          "page": 19,
+          "param": "HPF",
+          "printed": "0–1023",
+          "source": "pg06",
+          "where": "JUPITER-8"
+        }
+      ],
+      "name": "FILTER HPF",
+      "raw": [
+        0,
+        1023
+      ],
+      "table": "MDLSYN0"
+    },
+    {
+      "display": {
+        "kind": "identity",
+        "source": "guide",
+        "unit": ""
+      },
+      "evidence": [
+        {
+          "page": 19,
+          "param": "CUTOFF",
+          "printed": "0–1023",
+          "source": "pg06",
+          "where": "JUPITER-8"
+        },
+        {
+          "page": 20,
+          "param": "CUTOFF",
+          "printed": "0–1023",
+          "source": "pg06",
+          "where": "JUNO-106"
+        },
+        {
+          "page": 20,
+          "param": "CUTOFF",
+          "printed": "0–1023",
+          "source": "pg03",
+          "where": "JX-8P"
+        },
+        {
+          "page": 17,
+          "param": "CUTOFF",
+          "printed": "0–1023",
+          "source": "pgxm01",
+          "where": "SH-101"
+        },
+        {
+          "page": 6,
+          "param": "To edit the value",
+          "printed": "an example screen showing 1023",
+          "source": "rm07",
+          "where": "Panel Descriptions: Top Panel, Display 2"
+        }
+      ],
+      "name": "FILTER FREQ",
+      "raw": [
+        0,
+        1023
+      ],
+      "table": "MDLSYN0"
+    },
+    {
+      "display": {
+        "kind": "identity",
+        "source": "guide",
+        "unit": ""
+      },
+      "evidence": [
+        {
+          "page": 19,
+          "param": "RESONANCE",
+          "printed": "0–1023",
+          "source": "pg06",
+          "where": "JUPITER-8"
+        },
+        {
+          "page": 20,
+          "param": "RESONANCE",
+          "printed": "0–1023",
+          "source": "pg06",
+          "where": "JUNO-106"
+        },
+        {
+          "page": 20,
+          "param": "RESONANCE",
+          "printed": "0–1023",
+          "source": "pg03",
+          "where": "JX-8P"
+        },
+        {
+          "page": 17,
+          "param": "RESONANCE",
+          "printed": "0–1023",
+          "source": "pgxm01",
+          "where": "SH-101"
+        }
+      ],
+      "name": "FILTER RESO",
+      "raw": [
+        0,
+        1023
+      ],
+      "table": "MDLSYN0"
+    },
+    {
+      "display": {
+        "kind": "identity",
+        "source": "guide",
+        "unit": ""
+      },
+      "evidence": [
+        {
+          "page": 19,
+          "param": "AMP LEVEL",
+          "printed": "0–127",
+          "source": "pg06",
+          "where": "JUPITER-8"
+        },
+        {
+          "page": 20,
+          "param": "AMP LEVEL",
+          "printed": "0–127",
+          "source": "pg06",
+          "where": "JUNO-106"
+        },
+        {
+          "page": 20,
+          "param": "AMP LEVEL",
+          "printed": "0–127",
+          "source": "pg03",
+          "where": "JX-8P"
+        },
+        {
+          "page": 17,
+          "param": "AMP LEVEL",
+          "printed": "0–127",
+          "source": "pgxm01",
+          "where": "SH-101"
+        }
+      ],
+      "name": "AMP LEVEL",
+      "raw": [
+        0,
+        127
+      ],
+      "table": "MDLSYN0"
+    },
+    {
+      "checks": [
+        "how a negative value is written on the wire (DEVICE-MODEL §10 item 11)"
+      ],
+      "display": {
+        "kind": "offset",
+        "offset": 0,
+        "plus": true,
+        "source": "convention",
+        "unit": ""
+      },
+      "name": "AMP MOD",
+      "raw": [
+        -100,
+        100
+      ],
+      "table": "MDLSYN0",
+      "why": "Not on the guide pages read. The MI shows the block's other ±100 values as -100 - 100."
+    },
+    {
+      "display": {
+        "kind": "identity",
+        "source": "guide",
+        "unit": ""
+      },
+      "evidence": [
+        {
+          "page": 19,
+          "param": "AMP MOD-STEP",
+          "printed": "0–3",
+          "source": "pg06",
+          "where": "JUPITER-8"
+        }
+      ],
+      "name": "AMP MOD STEP",
+      "raw": [
+        0,
+        3
+      ],
+      "table": "MDLSYN0"
+    },
+    {
+      "display": {
+        "kind": "identity",
+        "source": "guide",
+        "unit": ""
+      },
+      "evidence": [
+        {
+          "page": 19,
+          "param": "ENV1/ENV2 ATTACK",
+          "printed": "0–1023",
+          "source": "pg06",
+          "where": "JUPITER-8"
+        },
+        {
+          "page": 20,
+          "param": "ENV ATTACK",
+          "printed": "0–1023",
+          "source": "pg06",
+          "where": "JUNO-106"
+        },
+        {
+          "page": 20,
+          "param": "ENV1/ENV2 ATTACK",
+          "printed": "0–1023",
+          "source": "pg03",
+          "where": "JX-8P"
+        },
+        {
+          "page": 17,
+          "param": "ENV ATTACK",
+          "printed": "0–1023",
+          "source": "pgxm01",
+          "where": "SH-101"
+        }
+      ],
+      "name": "ENV1 ATTACK",
+      "raw": [
+        0,
+        1023
+      ],
+      "table": "MDLSYN0"
+    },
+    {
+      "display": {
+        "kind": "identity",
+        "source": "guide",
+        "unit": ""
+      },
+      "evidence": [
+        {
+          "page": 19,
+          "param": "ENV1/ENV2 DECAY",
+          "printed": "0–1023",
+          "source": "pg06",
+          "where": "JUPITER-8"
+        },
+        {
+          "page": 20,
+          "param": "ENV DECAY",
+          "printed": "0–1023",
+          "source": "pg06",
+          "where": "JUNO-106"
+        },
+        {
+          "page": 20,
+          "param": "ENV1/ENV2 DECAY",
+          "printed": "0–1023",
+          "source": "pg03",
+          "where": "JX-8P"
+        },
+        {
+          "page": 17,
+          "param": "ENV DECAY",
+          "printed": "0–1023",
+          "source": "pgxm01",
+          "where": "SH-101"
+        }
+      ],
+      "name": "ENV1 DECAY",
+      "raw": [
+        0,
+        1023
+      ],
+      "table": "MDLSYN0"
+    },
+    {
+      "display": {
+        "kind": "identity",
+        "source": "guide",
+        "unit": ""
+      },
+      "evidence": [
+        {
+          "page": 19,
+          "param": "ENV1/ENV2 SUSTAIN",
+          "printed": "0–1023",
+          "source": "pg06",
+          "where": "JUPITER-8"
+        },
+        {
+          "page": 20,
+          "param": "ENV SUSTAIN",
+          "printed": "0–1023",
+          "source": "pg06",
+          "where": "JUNO-106"
+        },
+        {
+          "page": 20,
+          "param": "ENV1/ENV2 SUSTAIN",
+          "printed": "0–1023",
+          "source": "pg03",
+          "where": "JX-8P"
+        },
+        {
+          "page": 17,
+          "param": "ENV SUSTAIN",
+          "printed": "0–1023",
+          "source": "pgxm01",
+          "where": "SH-101"
+        }
+      ],
+      "name": "ENV1 SUSTAIN",
+      "raw": [
+        0,
+        1023
+      ],
+      "table": "MDLSYN0"
+    },
+    {
+      "display": {
+        "kind": "identity",
+        "source": "guide",
+        "unit": ""
+      },
+      "evidence": [
+        {
+          "page": 19,
+          "param": "ENV1/ENV2 RELEASE",
+          "printed": "0–1023",
+          "source": "pg06",
+          "where": "JUPITER-8"
+        },
+        {
+          "page": 20,
+          "param": "ENV RELEASE",
+          "printed": "0–1023",
+          "source": "pg06",
+          "where": "JUNO-106"
+        },
+        {
+          "page": 20,
+          "param": "ENV1/ENV2 RELEASE",
+          "printed": "0–1023",
+          "source": "pg03",
+          "where": "JX-8P"
+        },
+        {
+          "page": 17,
+          "param": "ENV RELEASE",
+          "printed": "0–1023",
+          "source": "pgxm01",
+          "where": "SH-101"
+        }
+      ],
+      "name": "ENV1 RELEASE",
+      "raw": [
+        0,
+        1023
+      ],
+      "table": "MDLSYN0"
+    },
+    {
+      "checks": [
+        "which parameter the JUPITER-8's ENV1 KEY FLW SW uses, and its wire values"
+      ],
+      "display": {
+        "kind": "identity",
+        "source": "guide",
+        "unit": ""
+      },
+      "evidence": [
+        {
+          "page": 20,
+          "param": "ENV1 KEY FOLLOW-S",
+          "printed": "0–3",
+          "source": "pg03",
+          "where": "JX-8P"
+        },
+        {
+          "page": 19,
+          "param": "ENV1 KEY FLW SW",
+          "printed": "OFF, ON, INV",
+          "source": "pg06",
+          "where": "JUPITER-8"
+        }
+      ],
+      "models": {
+        "JX8P": {
+          "raw": [
+            0,
+            3
+          ]
+        }
+      },
+      "name": "ENV1 KEY FOLLOW STEP",
+      "raw": [
+        0,
+        6
+      ],
+      "table": "MDLSYN0",
+      "why": "The JX-8P shows 0–3. The JUPITER-8's ENV1 KEY FLW SW (OFF, ON, INV) may be this parameter or another."
+    },
+    {
+      "checks": [
+        "which parameter the JUPITER-8's ENV2 KEY FLW SW uses, and its wire values"
+      ],
+      "display": {
+        "kind": "identity",
+        "source": "guide",
+        "unit": ""
+      },
+      "evidence": [
+        {
+          "page": 20,
+          "param": "ENV2 KEY FOLLOW-S",
+          "printed": "0–3",
+          "source": "pg03",
+          "where": "JX-8P"
+        },
+        {
+          "page": 19,
+          "param": "ENV2 KEY FLW SW",
+          "printed": "OFF, ON",
+          "source": "pg06",
+          "where": "JUPITER-8"
+        }
+      ],
+      "name": "ENV2 KEY FOLLOW STEP",
+      "raw": [
+        0,
+        3
+      ],
+      "table": "MDLSYN0",
+      "why": "As ENV1 KEY FOLLOW STEP."
+    },
+    {
+      "display": {
+        "kind": "identity",
+        "source": "guide",
+        "unit": ""
+      },
+      "evidence": [
+        {
+          "page": 20,
+          "param": "PITCH DYNAMICS",
+          "printed": "0–3",
+          "source": "pg03",
+          "where": "JX-8P"
+        }
+      ],
+      "name": "DYNAMICS PITCH",
+      "raw": [
+        0,
+        3
+      ],
+      "table": "MDLSYN0",
+      "why": "The MI gives no names; the guide shows plain numbers."
+    },
+    {
+      "display": {
+        "kind": "identity",
+        "source": "guide",
+        "unit": ""
+      },
+      "evidence": [
+        {
+          "page": 20,
+          "param": "FILTER DYNAMICS",
+          "printed": "0–3",
+          "source": "pg03",
+          "where": "JX-8P"
+        }
+      ],
+      "name": "DYNAMICS FILTER",
+      "raw": [
+        0,
+        3
+      ],
+      "table": "MDLSYN0",
+      "why": "The MI gives no names; the guide shows plain numbers."
+    },
+    {
+      "display": {
+        "kind": "identity",
+        "source": "guide",
+        "unit": ""
+      },
+      "evidence": [
+        {
+          "page": 20,
+          "param": "AMP DYNAMICS",
+          "printed": "0–3",
+          "source": "pg03",
+          "where": "JX-8P"
+        }
+      ],
+      "name": "DYNAMICS AMP",
+      "raw": [
+        0,
+        3
+      ],
+      "table": "MDLSYN0",
+      "why": "The MI gives no names; the guide shows plain numbers."
+    },
+    {
+      "display": {
+        "kind": "identity",
+        "source": "guide",
+        "unit": ""
+      },
+      "evidence": [
+        {
+          "page": 20,
+          "param": "PITCH DRIFT",
+          "printed": "0–255",
+          "source": "pg03",
+          "where": "JX-8P"
+        },
+        {
+          "page": 18,
+          "param": "PITCH DRIFT",
+          "printed": "0–255",
+          "source": "pgxm01",
+          "where": "SH-101"
+        }
+      ],
+      "name": "PITCH DRIFT",
+      "raw": [
+        0,
+        255
+      ],
+      "table": "MDLSYN0"
+    },
+    {
+      "display": {
+        "kind": "identity",
+        "source": "guide",
+        "unit": ""
+      },
+      "evidence": [
+        {
+          "page": 19,
+          "param": "BEND PITCH",
+          "printed": "0–1200",
+          "source": "pg06",
+          "where": "JUPITER-8"
+        },
+        {
+          "page": 20,
+          "param": "BEND PITCH",
+          "printed": "0–1200",
+          "source": "pg06",
+          "where": "JUNO-106"
+        },
+        {
+          "page": 18,
+          "param": "BEND PITCH",
+          "printed": "0–1500",
+          "source": "pgxm01",
+          "where": "SH-101"
+        },
+        {
+          "page": 20,
+          "param": "BEND PITCH-STEP",
+          "printed": "2, 3, 4, 7",
+          "source": "pg03",
+          "where": "JX-8P"
+        }
+      ],
+      "models": {
+        "JP8": {
+          "raw": [
+            0,
+            1200
+          ]
+        },
+        "JUNO106": {
+          "raw": [
+            0,
+            1200
+          ]
+        },
+        "SH101": {
+          "raw": [
+            0,
+            1500
+          ]
+        }
+      },
+      "name": "BENDER PITCH DEPTH",
+      "raw": [
+        0,
+        4800
+      ],
+      "table": "MDLSYN0",
+      "why": "Each model shows only part of the wire range. The JX-8P uses BENDER PITCH DEPTH STEP instead."
+    },
+    {
+      "display": {
+        "kind": "identity",
+        "source": "guide",
+        "unit": ""
+      },
+      "evidence": [
+        {
+          "page": 19,
+          "param": "PORTA TIME",
+          "printed": "0–1023",
+          "source": "pg06",
+          "where": "JUPITER-8"
+        },
+        {
+          "page": 20,
+          "param": "PORTA TIME",
+          "printed": "0–1023",
+          "source": "pg06",
+          "where": "JUNO-106"
+        },
+        {
+          "page": 20,
+          "param": "PORTA TIME",
+          "printed": "0–1023",
+          "source": "pg03",
+          "where": "JX-8P"
+        },
+        {
+          "page": 18,
+          "param": "PORTA TIME",
+          "printed": "0–1023",
+          "source": "pgxm01",
+          "where": "SH-101"
+        }
+      ],
+      "name": "PORTAMENT TIME",
+      "raw": [
+        0,
+        1023
+      ],
+      "table": "MDLSYN0"
+    },
+    {
+      "checks": [
+        "that wire 1024 shows 0 and 1224 shows 200 on the JUPITER-8"
+      ],
+      "evidence": [
+        {
+          "page": 19,
+          "param": "FLT KEY FOLLOW",
+          "printed": "0–200",
+          "source": "pg06",
+          "where": "JUPITER-8"
+        },
+        {
+          "page": 20,
+          "param": "FLT KEY FOLLOW",
+          "printed": "0–200",
+          "source": "pg06",
+          "where": "JUNO-106"
+        },
+        {
+          "page": 20,
+          "param": "FLT KEY FOLLOW",
+          "printed": "0–200",
+          "source": "pg03",
+          "where": "JX-8P"
+        },
+        {
+          "page": 17,
+          "param": "FLT KEY FOLLOW",
+          "printed": "0–200",
+          "source": "pgxm01",
+          "where": "SH-101"
+        }
+      ],
+      "models": {
+        "JP8": {
+          "raw": [
+            1024,
+            1224
+          ]
+        },
+        "JUNO106": {
+          "raw": [
+            1024,
+            1224
+          ]
+        },
+        "JX8P": {
+          "raw": [
+            1024,
+            1224
+          ]
+        },
+        "SH101": {
+          "raw": [
+            1024,
+            1224
+          ]
+        }
+      },
+      "name": "FILTER KEY FOLLOW",
+      "raw": [
+        824,
+        1224
+      ],
+      "table": "MDLSYN0",
+      "why": "The MI's conversion (-200 - 200) stands. Every analog model shows only 0–200, wire 1024–1224 by that conversion."
+    },
+    {
+      "evidence": [
+        {
+          "page": 19,
+          "param": "FILTER SLOPE",
+          "printed": "-12dB, -24dB",
+          "source": "pg06",
+          "where": "JUPITER-8"
+        }
+      ],
+      "name": "FILTER SLOPE",
+      "raw": [
+        0,
+        2
+      ],
+      "subsets": {
+        "JP8": [
+          0,
+          2
+        ]
+      },
+      "table": "MDLSYN0",
+      "why": "The JUPITER-8 offers two of the MI's three slopes."
+    },
+    {
+      "checks": [
+        "which positions each model uses (DEVICE-MODEL §10 item 19)"
+      ],
+      "evidence": [
+        {
+          "page": 19,
+          "param": "OSC1 WAVEFORM",
+          "printed": "TRI, SAW, PW, SQR",
+          "source": "pg06",
+          "where": "JUPITER-8"
+        },
+        {
+          "page": 19,
+          "param": "OSC2 WAVEFORM",
+          "printed": "SINE, SAW, PW, NOISE",
+          "source": "pg06",
+          "where": "JUPITER-8"
+        },
+        {
+          "page": 20,
+          "param": "OSC1/OSC2 WAVEFORM",
+          "printed": "SAW, PULSE, SQR, NOISE",
+          "source": "pg06",
+          "where": "JX-8P"
+        }
+      ],
+      "name": "OSC1 WAVE FORM",
+      "raw": [
+        0,
+        27
+      ],
+      "subsets": {
+        "JP8": [
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ],
+        "JUNO106": [
+          6,
+          7,
+          8,
+          9
+        ],
+        "JX8P": [
+          16,
+          17,
+          18,
+          19
+        ],
+        "SH101": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      "table": "MDLSYN0",
+      "why": "The MI's list repeats names because each model uses its own run of it. The runs follow the guide's per-model lists; positions 20-27 match none of the four models."
+    },
+    {
+      "display": {
+        "kind": "identity",
+        "source": "convention",
+        "unit": ""
+      },
+      "evidence": [
+        {
+          "page": 19,
+          "param": "OSC1 LEVEL",
+          "printed": "0–255",
+          "source": "pg06",
+          "where": "JUPITER-8"
+        }
+      ],
+      "name": "OSC1 LEVEL",
+      "raw": [
+        0,
+        255
+      ],
+      "table": "MDLJPX",
+      "why": "The JUPITER-X model's guide pages (21 on) were not readable. Assumed to show the wire value, as every analog model's same-range control does."
+    },
+    {
+      "display": {
+        "kind": "identity",
+        "source": "convention",
+        "unit": ""
+      },
+      "evidence": [
+        {
+          "page": 19,
+          "param": "PULSE WIDTH MOD",
+          "printed": "0–127",
+          "source": "pg06",
+          "where": "JUPITER-8"
+        }
+      ],
+      "name": "OSC1 PW PWM",
+      "raw": [
+        0,
+        127
+      ],
+      "table": "MDLJPX",
+      "why": "The JUPITER-X model's guide pages (21 on) were not readable. Assumed to show the wire value, as every analog model's same-range control does."
+    },
+    {
+      "display": {
+        "kind": "identity",
+        "source": "convention",
+        "unit": ""
+      },
+      "evidence": [
+        {
+          "page": 19,
+          "param": "CUTOFF, RESONANCE, HPF, ENV1/ENV2, LFO RATE, LFO DELAY TIME",
+          "printed": "0–1023",
+          "source": "pg06",
+          "where": "JUPITER-8"
+        }
+      ],
+      "name": "OSC1 DELAY TIME",
+      "raw": [
+        0,
+        1023
+      ],
+      "table": "MDLJPX",
+      "why": "The JUPITER-X model's guide pages (21 on) were not readable. Assumed to show the wire value, as every analog model's same-range control does."
+    },
+    {
+      "display": {
+        "kind": "identity",
+        "source": "convention",
+        "unit": ""
+      },
+      "evidence": [
+        {
+          "page": 19,
+          "param": "CUTOFF, RESONANCE, HPF, ENV1/ENV2, LFO RATE, LFO DELAY TIME",
+          "printed": "0–1023",
+          "source": "pg06",
+          "where": "JUPITER-8"
+        }
+      ],
+      "name": "LFO1 RATE",
+      "raw": [
+        0,
+        1023
+      ],
+      "table": "MDLJPX",
+      "why": "The JUPITER-X model's guide pages (21 on) were not readable. Assumed to show the wire value, as every analog model's same-range control does."
+    },
+    {
+      "display": {
+        "kind": "identity",
+        "source": "convention",
+        "unit": ""
+      },
+      "evidence": [
+        {
+          "page": 19,
+          "param": "CUTOFF, RESONANCE, HPF, ENV1/ENV2, LFO RATE, LFO DELAY TIME",
+          "printed": "0–1023",
+          "source": "pg06",
+          "where": "JUPITER-8"
+        }
+      ],
+      "name": "LFO1 DELAY TIME",
+      "raw": [
+        0,
+        1023
+      ],
+      "table": "MDLJPX",
+      "why": "The JUPITER-X model's guide pages (21 on) were not readable. Assumed to show the wire value, as every analog model's same-range control does."
+    },
+    {
+      "display": {
+        "kind": "identity",
+        "source": "convention",
+        "unit": ""
+      },
+      "evidence": [
+        {
+          "page": 19,
+          "param": "CUTOFF, RESONANCE, HPF, ENV1/ENV2, LFO RATE, LFO DELAY TIME",
+          "printed": "0–1023",
+          "source": "pg06",
+          "where": "JUPITER-8"
+        }
+      ],
+      "name": "PITCH ENV1 ATTACK",
+      "raw": [
+        0,
+        1023
+      ],
+      "table": "MDLJPX",
+      "why": "The JUPITER-X model's guide pages (21 on) were not readable. Assumed to show the wire value, as every analog model's same-range control does."
+    },
+    {
+      "display": {
+        "kind": "identity",
+        "source": "convention",
+        "unit": ""
+      },
+      "evidence": [
+        {
+          "page": 19,
+          "param": "CUTOFF, RESONANCE, HPF, ENV1/ENV2, LFO RATE, LFO DELAY TIME",
+          "printed": "0–1023",
+          "source": "pg06",
+          "where": "JUPITER-8"
+        }
+      ],
+      "name": "PITCH ENV1 DECAY",
+      "raw": [
+        0,
+        1023
+      ],
+      "table": "MDLJPX",
+      "why": "The JUPITER-X model's guide pages (21 on) were not readable. Assumed to show the wire value, as every analog model's same-range control does."
+    },
+    {
+      "display": {
+        "kind": "identity",
+        "source": "convention",
+        "unit": ""
+      },
+      "evidence": [
+        {
+          "page": 19,
+          "param": "CUTOFF, RESONANCE, HPF, ENV1/ENV2, LFO RATE, LFO DELAY TIME",
+          "printed": "0–1023",
+          "source": "pg06",
+          "where": "JUPITER-8"
+        }
+      ],
+      "name": "PITCH ENV1 SUSTAIN",
+      "raw": [
+        0,
+        1023
+      ],
+      "table": "MDLJPX",
+      "why": "The JUPITER-X model's guide pages (21 on) were not readable. Assumed to show the wire value, as every analog model's same-range control does."
+    },
+    {
+      "display": {
+        "kind": "identity",
+        "source": "convention",
+        "unit": ""
+      },
+      "evidence": [
+        {
+          "page": 19,
+          "param": "CUTOFF, RESONANCE, HPF, ENV1/ENV2, LFO RATE, LFO DELAY TIME",
+          "printed": "0–1023",
+          "source": "pg06",
+          "where": "JUPITER-8"
+        }
+      ],
+      "name": "PITCH ENV1 RELEASE",
+      "raw": [
+        0,
+        1023
+      ],
+      "table": "MDLJPX",
+      "why": "The JUPITER-X model's guide pages (21 on) were not readable. Assumed to show the wire value, as every analog model's same-range control does."
+    },
+    {
+      "display": {
+        "kind": "identity",
+        "source": "convention",
+        "unit": ""
+      },
+      "evidence": [
+        {
+          "page": 19,
+          "param": "CUTOFF, RESONANCE, HPF, ENV1/ENV2, LFO RATE, LFO DELAY TIME",
+          "printed": "0–1023",
+          "source": "pg06",
+          "where": "JUPITER-8"
+        }
+      ],
+      "name": "FILTER ENV1 ATTACK",
+      "raw": [
+        0,
+        1023
+      ],
+      "table": "MDLJPX",
+      "why": "The JUPITER-X model's guide pages (21 on) were not readable. Assumed to show the wire value, as every analog model's same-range control does."
+    },
+    {
+      "display": {
+        "kind": "identity",
+        "source": "convention",
+        "unit": ""
+      },
+      "evidence": [
+        {
+          "page": 19,
+          "param": "CUTOFF, RESONANCE, HPF, ENV1/ENV2, LFO RATE, LFO DELAY TIME",
+          "printed": "0–1023",
+          "source": "pg06",
+          "where": "JUPITER-8"
+        }
+      ],
+      "name": "FILTER ENV1 DECAY",
+      "raw": [
+        0,
+        1023
+      ],
+      "table": "MDLJPX",
+      "why": "The JUPITER-X model's guide pages (21 on) were not readable. Assumed to show the wire value, as every analog model's same-range control does."
+    },
+    {
+      "display": {
+        "kind": "identity",
+        "source": "convention",
+        "unit": ""
+      },
+      "evidence": [
+        {
+          "page": 19,
+          "param": "CUTOFF, RESONANCE, HPF, ENV1/ENV2, LFO RATE, LFO DELAY TIME",
+          "printed": "0–1023",
+          "source": "pg06",
+          "where": "JUPITER-8"
+        }
+      ],
+      "name": "FILTER ENV1 SUSTAIN",
+      "raw": [
+        0,
+        1023
+      ],
+      "table": "MDLJPX",
+      "why": "The JUPITER-X model's guide pages (21 on) were not readable. Assumed to show the wire value, as every analog model's same-range control does."
+    },
+    {
+      "display": {
+        "kind": "identity",
+        "source": "convention",
+        "unit": ""
+      },
+      "evidence": [
+        {
+          "page": 19,
+          "param": "CUTOFF, RESONANCE, HPF, ENV1/ENV2, LFO RATE, LFO DELAY TIME",
+          "printed": "0–1023",
+          "source": "pg06",
+          "where": "JUPITER-8"
+        }
+      ],
+      "name": "FILTER ENV1 RELEASE",
+      "raw": [
+        0,
+        1023
+      ],
+      "table": "MDLJPX",
+      "why": "The JUPITER-X model's guide pages (21 on) were not readable. Assumed to show the wire value, as every analog model's same-range control does."
+    },
+    {
+      "display": {
+        "kind": "identity",
+        "source": "convention",
+        "unit": ""
+      },
+      "evidence": [
+        {
+          "page": 19,
+          "param": "CUTOFF, RESONANCE, HPF, ENV1/ENV2, LFO RATE, LFO DELAY TIME",
+          "printed": "0–1023",
+          "source": "pg06",
+          "where": "JUPITER-8"
+        }
+      ],
+      "name": "FILTER CUTOFF FREQ",
+      "raw": [
+        0,
+        1023
+      ],
+      "table": "MDLJPX",
+      "why": "The JUPITER-X model's guide pages (21 on) were not readable. Assumed to show the wire value, as every analog model's same-range control does."
+    },
+    {
+      "display": {
+        "kind": "identity",
+        "source": "convention",
+        "unit": ""
+      },
+      "evidence": [
+        {
+          "page": 19,
+          "param": "CUTOFF, RESONANCE, HPF, ENV1/ENV2, LFO RATE, LFO DELAY TIME",
+          "printed": "0–1023",
+          "source": "pg06",
+          "where": "JUPITER-8"
+        }
+      ],
+      "name": "FILTER RESONANCE",
+      "raw": [
+        0,
+        1023
+      ],
+      "table": "MDLJPX",
+      "why": "The JUPITER-X model's guide pages (21 on) were not readable. Assumed to show the wire value, as every analog model's same-range control does."
+    },
+    {
+      "display": {
+        "kind": "identity",
+        "source": "convention",
+        "unit": ""
+      },
+      "evidence": [
+        {
+          "page": 19,
+          "param": "CUTOFF, RESONANCE, HPF, ENV1/ENV2, LFO RATE, LFO DELAY TIME",
+          "printed": "0–1023",
+          "source": "pg06",
+          "where": "JUPITER-8"
+        }
+      ],
+      "name": "FILTER HPF",
+      "raw": [
+        0,
+        1023
+      ],
+      "table": "MDLJPX",
+      "why": "The JUPITER-X model's guide pages (21 on) were not readable. Assumed to show the wire value, as every analog model's same-range control does."
+    },
+    {
+      "display": {
+        "kind": "identity",
+        "source": "convention",
+        "unit": ""
+      },
+      "evidence": [
+        {
+          "page": 19,
+          "param": "CUTOFF, RESONANCE, HPF, ENV1/ENV2, LFO RATE, LFO DELAY TIME",
+          "printed": "0–1023",
+          "source": "pg06",
+          "where": "JUPITER-8"
+        }
+      ],
+      "name": "AMP ENV ATTACK",
+      "raw": [
+        0,
+        1023
+      ],
+      "table": "MDLJPX",
+      "why": "The JUPITER-X model's guide pages (21 on) were not readable. Assumed to show the wire value, as every analog model's same-range control does."
+    },
+    {
+      "display": {
+        "kind": "identity",
+        "source": "convention",
+        "unit": ""
+      },
+      "evidence": [
+        {
+          "page": 19,
+          "param": "CUTOFF, RESONANCE, HPF, ENV1/ENV2, LFO RATE, LFO DELAY TIME",
+          "printed": "0–1023",
+          "source": "pg06",
+          "where": "JUPITER-8"
+        }
+      ],
+      "name": "AMP ENV DECAY",
+      "raw": [
+        0,
+        1023
+      ],
+      "table": "MDLJPX",
+      "why": "The JUPITER-X model's guide pages (21 on) were not readable. Assumed to show the wire value, as every analog model's same-range control does."
+    },
+    {
+      "display": {
+        "kind": "identity",
+        "source": "convention",
+        "unit": ""
+      },
+      "evidence": [
+        {
+          "page": 19,
+          "param": "CUTOFF, RESONANCE, HPF, ENV1/ENV2, LFO RATE, LFO DELAY TIME",
+          "printed": "0–1023",
+          "source": "pg06",
+          "where": "JUPITER-8"
+        }
+      ],
+      "name": "AMP ENV SUSTAIN",
+      "raw": [
+        0,
+        1023
+      ],
+      "table": "MDLJPX",
+      "why": "The JUPITER-X model's guide pages (21 on) were not readable. Assumed to show the wire value, as every analog model's same-range control does."
+    },
+    {
+      "display": {
+        "kind": "identity",
+        "source": "convention",
+        "unit": ""
+      },
+      "evidence": [
+        {
+          "page": 19,
+          "param": "CUTOFF, RESONANCE, HPF, ENV1/ENV2, LFO RATE, LFO DELAY TIME",
+          "printed": "0–1023",
+          "source": "pg06",
+          "where": "JUPITER-8"
+        }
+      ],
+      "name": "AMP ENV RELEASE",
+      "raw": [
+        0,
+        1023
+      ],
+      "table": "MDLJPX",
+      "why": "The JUPITER-X model's guide pages (21 on) were not readable. Assumed to show the wire value, as every analog model's same-range control does."
+    },
+    {
+      "display": {
+        "kind": "identity",
+        "source": "convention",
+        "unit": ""
+      },
+      "evidence": [
+        {
+          "page": 19,
+          "param": "FLT KEY FOLLOW",
+          "printed": "0–200",
+          "source": "pg06",
+          "where": "JUPITER-8"
+        }
+      ],
+      "name": "FILTER KEY FOLLOW",
+      "raw": [
+        0,
+        200
+      ],
+      "table": "MDLJPX",
+      "why": "The JUPITER-X model's guide pages (21 on) were not readable. Assumed to show the wire value, as every analog model's same-range control does."
+    },
+    {
+      "display": {
+        "kind": "identity",
+        "source": "convention",
+        "unit": ""
+      },
+      "evidence": [
+        {
+          "page": 19,
+          "param": "CROSS MOD",
+          "printed": "0–10800",
+          "source": "pg06",
+          "where": "JUPITER-8"
+        },
+        {
+          "page": 18,
+          "param": "XMd12 Dpth, XMd34 Dpth",
+          "printed": "0–10800",
+          "source": "pg06",
+          "where": "TONE COMMON"
+        }
+      ],
+      "name": "OSC12 XMOD DEPTH",
+      "raw": [
+        0,
+        10800
+      ],
+      "table": "MDLJPX",
+      "why": "The JUPITER-X model's guide pages (21 on) were not readable. Assumed to show the wire value, as every analog model's same-range control does."
+    },
+    {
+      "display": {
+        "kind": "identity",
+        "source": "convention",
+        "unit": ""
+      },
+      "evidence": [
+        {
+          "page": 19,
+          "param": "AMP LEVEL",
+          "printed": "0–127",
+          "source": "pg06",
+          "where": "JUPITER-8"
+        }
+      ],
+      "name": "AMP LEVEL",
+      "raw": [
+        0,
+        127
+      ],
+      "table": "MDLJPX",
+      "why": "The JUPITER-X model's guide pages (21 on) were not readable. Assumed to show the wire value, as every analog model's same-range control does."
+    },
+    {
+      "display": {
+        "kind": "identity",
+        "source": "convention",
+        "unit": ""
+      },
+      "evidence": [
+        {
+          "page": 19,
+          "param": "PORTA TIME",
+          "printed": "0–1023",
+          "source": "pg06",
+          "where": "JUPITER-8"
+        },
+        {
+          "page": 17,
+          "param": "Porta Time",
+          "printed": "0–1023",
+          "source": "pg06",
+          "where": "TONE COMMON"
+        }
+      ],
+      "name": "PORTAMENT TIME",
+      "raw": [
+        0,
+        1023
+      ],
+      "table": "MDLJPX",
+      "why": "The JUPITER-X model's guide pages (21 on) were not readable. Assumed to show the wire value, as every analog model's same-range control does."
+    },
+    {
+      "display": {
+        "kind": "identity",
+        "source": "convention",
+        "unit": ""
+      },
+      "evidence": [
+        {
+          "page": 4,
+          "param": "Bend Range",
+          "printed": "0–24, TONE",
+          "source": "pg06",
+          "where": "SCENE PART"
+        }
+      ],
+      "name": "BENDER PITCH DEPTH UP",
+      "raw": [
+        0,
+        24
+      ],
+      "table": "MDLJPX",
+      "why": "The JUPITER-X model's guide pages were not readable. Assumed semitones shown as numbers, as the part's own bend range is."
+    },
+    {
+      "display": {
+        "kind": "identity",
+        "source": "convention",
+        "unit": ""
+      },
+      "evidence": [
+        {
+          "page": 4,
+          "param": "Bend Range",
+          "printed": "0–24, TONE",
+          "source": "pg06",
+          "where": "SCENE PART"
+        }
+      ],
+      "name": "BENDER PITCH DEPTH DOWN",
+      "raw": [
+        0,
+        24
+      ],
+      "table": "MDLJPX",
+      "why": "The JUPITER-X model's guide pages were not readable. Assumed semitones shown as numbers, as the part's own bend range is."
+    },
+    {
+      "display": {
+        "kind": "identity",
+        "source": "convention",
+        "unit": ""
+      },
+      "evidence": [
+        {
+          "page": 20,
+          "param": "PITCH DRIFT",
+          "printed": "0–255",
+          "source": "pg03",
+          "where": "JX-8P"
+        }
+      ],
+      "name": "PITCH DRIFT",
+      "raw": [
+        0,
+        255
+      ],
+      "table": "MDLJPX",
+      "why": "The JUPITER-X model's guide pages (21 on) were not readable. Assumed to show the wire value, as every analog model's same-range control does."
+    },
+    {
+      "display": {
+        "kind": "labels",
+        "labels": [
+          "OFF",
+          "ON"
+        ],
+        "source": "guide"
+      },
+      "evidence": [
+        {
+          "page": 7,
+          "param": "Switch",
+          "printed": "OFF, ON",
+          "source": "pg06",
+          "where": "SCENE PART MFX"
+        }
+      ],
+      "name": "MFX Switch",
+      "raw": [
+        0,
+        1
+      ],
+      "table": "MFX"
+    },
+    {
+      "checks": [
+        "the destinations of a few MFX types"
+      ],
+      "evidence": [
+        {
+          "page": 7,
+          "param": "Asgn1–4",
+          "printed": "listed per type in the MFX List (p. 40)",
+          "source": "pg06",
+          "where": "SCENE PART MFX"
+        }
+      ],
+      "name": "MFX CtrlAsgn",
+      "raw": [
+        0,
+        11
+      ],
+      "table": "MFX",
+      "why": "The destinations depend on the MFX type, like its parameters. The MFX pages (40 on) were not readable."
+    },
+    {
+      "display": {
+        "kind": "labels",
+        "labels": [
+          "OFF",
+          "INTEGRA7Rev",
+          "Warm Hall",
+          "Hall",
+          "GS Reverb",
+          "SRV-2000",
+          "SRV-2000NL",
+          "GM2 Reverb",
+          "Gate Reverb"
+        ],
+        "source": "guide"
+      },
+      "evidence": [
+        {
+          "page": 10,
+          "param": "types",
+          "printed": "00 OFF … 08 Gate Reverb",
+          "source": "pg06",
+          "where": "SCENE EFFECT: Rev"
+        }
+      ],
+      "name": "Reverb Type",
+      "raw": [
+        0,
+        8
+      ],
+      "table": "Reverb"
+    },
+    {
+      "display": {
+        "kind": "identity",
+        "source": "convention",
+        "unit": ""
+      },
+      "evidence": [
+        {
+          "page": 7,
+          "param": "Level",
+          "printed": "0–127",
+          "source": "pg06",
+          "where": "SCENE EFFECT: Cho"
+        },
+        {
+          "page": 9,
+          "param": "Level",
+          "printed": "0–127",
+          "source": "pg06",
+          "where": "SCENE EFFECT: Dly"
+        }
+      ],
+      "name": "Reverb Level",
+      "raw": [
+        0,
+        127
+      ],
+      "table": "Reverb",
+      "why": "Read for the chorus and delay; the reverb's own Level line was not captured."
+    },
+    {
+      "blocks": {
+        "Scene Delay": {
+          "display": {
+            "kind": "labels",
+            "labels": [
+              "OFF",
+              "Delay",
+              "T-Ctrl Dly",
+              "Delay→Trem",
+              "2Tap PanDly",
+              "3Tap PanDly"
+            ],
+            "source": "guide"
+          },
+          "raw": [
+            0,
+            5
+          ]
+        }
+      },
+      "checks": [
+        "whether the delay's types are wire 0–5 or the chorus's numbers 0 and 4–8",
+        "the arrow in 'Delay→Trem': the guide's text has a symbol there"
+      ],
+      "display": {
+        "kind": "labels",
+        "labels": [
+          "OFF",
+          "Chorus",
+          "CE-1",
+          "SDD-320",
+          "Delay",
+          "T-Ctrl Dly",
+          "Delay→Trem",
+          "2Tap PanDly",
+          "3Tap PanDly",
+          "JUNO Chorus",
+          "JV Chorus"
+        ],
+        "source": "guide"
+      },
+      "evidence": [
+        {
+          "page": 7,
+          "param": "types",
+          "printed": "00 OFF … 10 JV Chorus",
+          "source": "pg06",
+          "where": "SCENE EFFECT: Cho"
+        }
+      ],
+      "name": "Chorus Type",
+      "raw": [
+        0,
+        10
+      ],
+      "table": "Chorus",
+      "why": "The Scene Delay uses the Chorus block's layout (the MI's [Chorus]), with its own six types (guide p. 9)."
+    },
+    {
+      "display": {
+        "kind": "identity",
+        "source": "guide",
+        "unit": ""
+      },
+      "evidence": [
+        {
+          "page": 7,
+          "param": "Level",
+          "printed": "0–127",
+          "source": "pg06",
+          "where": "SCENE EFFECT: Cho"
+        }
+      ],
+      "name": "Chorus Level",
+      "raw": [
+        0,
+        127
+      ],
+      "table": "Chorus"
+    },
+    {
+      "display": {
+        "kind": "identity",
+        "source": "guide",
+        "unit": ""
+      },
+      "evidence": [
+        {
+          "page": 7,
+          "param": "Rev Send",
+          "printed": "0–127",
+          "source": "pg06",
+          "where": "SCENE EFFECT: Cho"
+        }
+      ],
+      "name": "Reverb Send Level",
+      "raw": [
+        0,
+        127
+      ],
+      "table": "Chorus"
+    }
+  ],
+  "format": "synthctrlr.initial-display",
+  "formatVersion": 1,
+  "profile": "roland.jupiter-xm",
+  "rule": "Facts only: names, ranges and value lists as Roland's documents print them, each with its source and page. Typed slots: the slot order follows the guide's order, and a slot's value is the shown number or the list position from 0. Both are assumed until matched on the synth.",
+  "sources": {
+    "mi106": {
+      "edition": "1.06",
+      "kind": "spec",
+      "read": "all of it, with tools/mi-sweep",
+      "title": "JUPITER-X/Xm MIDI Implementation"
+    },
+    "pg03": {
+      "edition": "03",
+      "kind": "guide",
+      "read": "pages 14-20 only (the JX-8P table)",
+      "title": "JUPITER-X/Xm Parameter Guide",
+      "url": "https://static.roland.com/assets/media/pdf/JUPITER-X_Xm_parameter_eng03_W.pdf"
+    },
+    "pg06": {
+      "edition": "06",
+      "kind": "guide",
+      "note": "for Ver. 3.0 and later",
+      "read": "pages 3-20 only, through a web reader that stops there",
+      "title": "JUPITER-X/Xm Parameter Guide",
+      "url": "https://static.roland.com/assets/media/pdf/JUPITER-X_Xm_parameter_eng06_W.pdf"
+    },
+    "pgxm01": {
+      "edition": "01",
+      "kind": "guide",
+      "read": "pages 17-18 only (the SH-101 table)",
+      "title": "JUPITER-Xm Parameter Guide",
+      "url": "https://static.roland.com/assets/media/pdf/JUPITER-Xm_parameter_eng01_W.pdf"
+    },
+    "rm07": {
+      "edition": "07",
+      "kind": "manual",
+      "note": "Ver. 3.0 and later",
+      "read": "pages 2-32 only",
+      "title": "JUPITER-X Reference Manual",
+      "url": "https://static.roland.com/assets/media/pdf/JUPITER-X_Reference_eng07_W.pdf"
+    }
+  },
+  "typed": {
+    "Chorus": {
+      "by": "Chorus Type",
+      "evidence": [
+        {
+          "page": 7,
+          "param": "per type",
+          "printed": "pages 7-8",
+          "source": "pg06",
+          "where": "Chorus Parameters"
+        }
+      ],
+      "types": [
+        {
+          "name": "Chorus",
+          "slots": [
+            {
+              "display": {
+                "kind": "identity",
+                "source": "convention",
+                "unit": ""
+              },
+              "label": "Rate",
+              "printed": "0–127",
+              "slot": 1
+            },
+            {
+              "display": {
+                "kind": "identity",
+                "source": "convention",
+                "unit": ""
+              },
+              "label": "Depth",
+              "printed": "0–127",
+              "slot": 2
+            },
+            {
+              "display": {
+                "kind": "identity",
+                "source": "convention",
+                "unit": ""
+              },
+              "label": "Feedback",
+              "printed": "0–127",
+              "slot": 3
+            }
+          ],
+          "type": 1
+        },
+        {
+          "name": "CE-1",
+          "slots": [
+            {
+              "display": {
+                "kind": "identity",
+                "source": "convention",
+                "unit": ""
+              },
+              "label": "Intensity",
+              "printed": "0–127",
+              "slot": 1
+            }
+          ],
+          "type": 2
+        },
+        {
+          "name": "SDD-320",
+          "slots": [
+            {
+              "display": {
+                "kind": "labels",
+                "labels": [
+                  "1",
+                  "2",
+                  "3",
+                  "4",
+                  "1+4",
+                  "2+4",
+                  "3+4"
+                ],
+                "source": "convention"
+              },
+              "label": "Mode",
+              "printed": "1, 2, 3, 4, 1+4, 2+4, 3+4",
+              "slot": 1
+            }
+          ],
+          "type": 3
+        },
+        {
+          "name": "Delay",
+          "slots": [
+            {
+              "display": {
+                "kind": "labels",
+                "labels": [
+                  "OFF",
+                  "ON"
+                ],
+                "source": "convention"
+              },
+              "label": "Dly Sync",
+              "printed": "OFF, ON",
+              "slot": 1
+            },
+            {
+              "display": {
+                "kind": "identity",
+                "source": "convention",
+                "unit": ""
+              },
+              "label": "Dly Msec",
+              "printed": "1–1300",
+              "slot": 2
+            },
+            {
+              "display": {
+                "kind": "labels",
+                "labels": [
+                  "1/64T",
+                  "1/64",
+                  "1/32T",
+                  "1/32",
+                  "1/16T",
+                  "1/32.",
+                  "1/16",
+                  "1/8T",
+                  "1/16.",
+                  "1/8",
+                  "1/4T",
+                  "1/8.",
+                  "1/4",
+                  "1/2T",
+                  "1/4.",
+                  "1/2",
+                  "1T",
+                  "1/2.",
+                  "1",
+                  "2T",
+                  "1.",
+                  "2"
+                ],
+                "source": "convention"
+              },
+              "label": "Dly Note",
+              "printed": "the note list",
+              "slot": 3
+            },
+            {
+              "display": {
+                "kind": "offset",
+                "offset": 0,
+                "plus": true,
+                "source": "convention",
+                "unit": "%"
+              },
+              "label": "Feedback",
+              "printed": "-98–+98 [%]",
+              "slot": 4
+            },
+            {
+              "display": {
+                "kind": "labels",
+                "labels": [
+                  "200Hz",
+                  "250Hz",
+                  "315Hz",
+                  "400Hz",
+                  "500Hz",
+                  "630Hz",
+                  "800Hz",
+                  "1000Hz",
+                  "1250Hz",
+                  "1600Hz",
+                  "2000Hz",
+                  "2500Hz",
+                  "3150Hz",
+                  "4000Hz",
+                  "5000Hz",
+                  "6300Hz",
+                  "8000Hz",
+                  "BYPASS"
+                ],
+                "source": "convention"
+              },
+              "label": "HF Damp",
+              "printed": "200–8000 [Hz], BYPASS",
+              "slot": 5
+            }
+          ],
+          "type": 4
+        },
+        {
+          "name": "T-Ctrl Dly",
+          "slots": [
+            {
+              "display": {
+                "kind": "labels",
+                "labels": [
+                  "OFF",
+                  "ON"
+                ],
+                "source": "convention"
+              },
+              "label": "Dly Sync",
+              "printed": "OFF, ON",
+              "slot": 1
+            },
+            {
+              "display": {
+                "kind": "identity",
+                "source": "convention",
+                "unit": ""
+              },
+              "label": "Dly Msec",
+              "printed": "1–1300",
+              "slot": 2
+            },
+            {
+              "display": {
+                "kind": "labels",
+                "labels": [
+                  "1/64T",
+                  "1/64",
+                  "1/32T",
+                  "1/32",
+                  "1/16T",
+                  "1/32.",
+                  "1/16",
+                  "1/8T",
+                  "1/16.",
+                  "1/8",
+                  "1/4T",
+                  "1/8.",
+                  "1/4",
+                  "1/2T",
+                  "1/4.",
+                  "1/2",
+                  "1T",
+                  "1/2.",
+                  "1",
+                  "2T",
+                  "1.",
+                  "2"
+                ],
+                "source": "convention"
+              },
+              "label": "Dly Note",
+              "printed": "the note list",
+              "slot": 3
+            },
+            {
+              "display": {
+                "kind": "identity",
+                "source": "convention",
+                "unit": ""
+              },
+              "label": "Acceleration",
+              "printed": "0–15",
+              "slot": 4
+            },
+            {
+              "display": {
+                "kind": "offset",
+                "offset": 0,
+                "plus": true,
+                "source": "convention",
+                "unit": "%"
+              },
+              "label": "Feedback",
+              "printed": "-98–+98 [%]",
+              "slot": 5
+            },
+            {
+              "display": {
+                "kind": "labels",
+                "labels": [
+                  "200Hz",
+                  "250Hz",
+                  "315Hz",
+                  "400Hz",
+                  "500Hz",
+                  "630Hz",
+                  "800Hz",
+                  "1000Hz",
+                  "1250Hz",
+                  "1600Hz",
+                  "2000Hz",
+                  "2500Hz",
+                  "3150Hz",
+                  "4000Hz",
+                  "5000Hz",
+                  "6300Hz",
+                  "8000Hz",
+                  "BYPASS"
+                ],
+                "source": "convention"
+              },
+              "label": "HF Damp",
+              "printed": "200–8000 [Hz], BYPASS",
+              "slot": 6
+            }
+          ],
+          "type": 5
+        },
+        {
+          "name": "Delay→Trem",
+          "slots": [
+            {
+              "display": {
+                "kind": "labels",
+                "labels": [
+                  "MONAURAL",
+                  "STEREO"
+                ],
+                "source": "convention"
+              },
+              "label": "Input",
+              "printed": "MONAURAL, STEREO",
+              "slot": 1
+            },
+            {
+              "display": {
+                "kind": "labels",
+                "labels": [
+                  "OFF",
+                  "ON"
+                ],
+                "source": "convention"
+              },
+              "label": "Dly Sync",
+              "printed": "OFF, ON",
+              "slot": 2
+            },
+            {
+              "display": {
+                "kind": "identity",
+                "source": "convention",
+                "unit": ""
+              },
+              "label": "Dly Msec",
+              "printed": "1–1300",
+              "slot": 3
+            },
+            {
+              "display": {
+                "kind": "labels",
+                "labels": [
+                  "1/64T",
+                  "1/64",
+                  "1/32T",
+                  "1/32",
+                  "1/16T",
+                  "1/32.",
+                  "1/16",
+                  "1/8T",
+                  "1/16.",
+                  "1/8",
+                  "1/4T",
+                  "1/8.",
+                  "1/4",
+                  "1/2T",
+                  "1/4.",
+                  "1/2",
+                  "1T",
+                  "1/2.",
+                  "1",
+                  "2T",
+                  "1.",
+                  "2"
+                ],
+                "source": "convention"
+              },
+              "label": "Dly Note",
+              "printed": "the note list",
+              "slot": 4
+            },
+            {
+              "display": {
+                "kind": "offset",
+                "offset": 0,
+                "plus": true,
+                "source": "convention",
+                "unit": "%"
+              },
+              "label": "Feedback",
+              "printed": "-98–+98 [%]",
+              "slot": 5
+            },
+            {
+              "display": {
+                "kind": "labels",
+                "labels": [
+                  "200Hz",
+                  "250Hz",
+                  "315Hz",
+                  "400Hz",
+                  "500Hz",
+                  "630Hz",
+                  "800Hz",
+                  "1000Hz",
+                  "1250Hz",
+                  "1600Hz",
+                  "2000Hz",
+                  "2500Hz",
+                  "3150Hz",
+                  "4000Hz",
+                  "5000Hz",
+                  "6300Hz",
+                  "8000Hz",
+                  "BYPASS"
+                ],
+                "source": "convention"
+              },
+              "label": "HF Damp",
+              "printed": "200–8000 [Hz], BYPASS",
+              "slot": 6
+            },
+            {
+              "display": {
+                "kind": "labels",
+                "labels": [
+                  "OFF",
+                  "ON"
+                ],
+                "source": "convention"
+              },
+              "label": "Trm Switch",
+              "printed": "OFF, ON",
+              "slot": 7
+            },
+            {
+              "display": {
+                "kind": "labels",
+                "labels": [
+                  "TRI",
+                  "SQR",
+                  "SIN",
+                  "SAW1",
+                  "SAW2",
+                  "TRP"
+                ],
+                "source": "convention"
+              },
+              "label": "Trm ModWave",
+              "printed": "TRI, SQR, SIN, SAW1, SAW2, TRP",
+              "slot": 8
+            },
+            {
+              "display": {
+                "kind": "labels",
+                "labels": [
+                  "OFF",
+                  "ON"
+                ],
+                "source": "convention"
+              },
+              "label": "Trm Sync",
+              "printed": "OFF, ON",
+              "slot": 9
+            },
+            {
+              "display": {
+                "kind": "raw",
+                "source": "none"
+              },
+              "label": "Trm Hz",
+              "printed": "0.05–10.00 [Hz]",
+              "slot": 10
+            },
+            {
+              "display": {
+                "kind": "labels",
+                "labels": [
+                  "1/64T",
+                  "1/64",
+                  "1/32T",
+                  "1/32",
+                  "1/16T",
+                  "1/32.",
+                  "1/16",
+                  "1/8T",
+                  "1/16.",
+                  "1/8",
+                  "1/4T",
+                  "1/8.",
+                  "1/4",
+                  "1/2T",
+                  "1/4.",
+                  "1/2",
+                  "1T",
+                  "1/2.",
+                  "1",
+                  "2T",
+                  "1.",
+                  "2"
+                ],
+                "source": "convention"
+              },
+              "label": "Trm Note",
+              "printed": "the note list",
+              "slot": 11
+            },
+            {
+              "display": {
+                "kind": "identity",
+                "source": "convention",
+                "unit": ""
+              },
+              "label": "Trm Depth",
+              "printed": "0–127",
+              "slot": 12
+            }
+          ],
+          "type": 6
+        },
+        {
+          "name": "2Tap PanDly",
+          "slots": [
+            {
+              "display": {
+                "kind": "labels",
+                "labels": [
+                  "OFF",
+                  "ON"
+                ],
+                "source": "convention"
+              },
+              "label": "Dly Sync",
+              "printed": "OFF, ON",
+              "slot": 1
+            },
+            {
+              "display": {
+                "kind": "identity",
+                "source": "convention",
+                "unit": ""
+              },
+              "label": "Dly Msec",
+              "printed": "1–1300",
+              "slot": 2
+            },
+            {
+              "display": {
+                "kind": "labels",
+                "labels": [
+                  "1/64T",
+                  "1/64",
+                  "1/32T",
+                  "1/32",
+                  "1/16T",
+                  "1/32.",
+                  "1/16",
+                  "1/8T",
+                  "1/16.",
+                  "1/8",
+                  "1/4T",
+                  "1/8.",
+                  "1/4",
+                  "1/2T",
+                  "1/4.",
+                  "1/2",
+                  "1T",
+                  "1/2.",
+                  "1",
+                  "2T",
+                  "1.",
+                  "2"
+                ],
+                "source": "convention"
+              },
+              "label": "Dly Note",
+              "printed": "the note list",
+              "slot": 3
+            },
+            {
+              "display": {
+                "kind": "offset",
+                "offset": 0,
+                "plus": true,
+                "source": "convention",
+                "unit": "%"
+              },
+              "label": "Feedback",
+              "printed": "-98–+98 [%]",
+              "slot": 4
+            },
+            {
+              "display": {
+                "kind": "labels",
+                "labels": [
+                  "200Hz",
+                  "250Hz",
+                  "315Hz",
+                  "400Hz",
+                  "500Hz",
+                  "630Hz",
+                  "800Hz",
+                  "1000Hz",
+                  "1250Hz",
+                  "1600Hz",
+                  "2000Hz",
+                  "2500Hz",
+                  "3150Hz",
+                  "4000Hz",
+                  "5000Hz",
+                  "6300Hz",
+                  "8000Hz",
+                  "BYPASS"
+                ],
+                "source": "convention"
+              },
+              "label": "HF Damp",
+              "printed": "200–8000 [Hz], BYPASS",
+              "slot": 5
+            },
+            {
+              "display": {
+                "kind": "pan",
+                "source": "convention"
+              },
+              "label": "Dly1 Pan",
+              "printed": "L64–63R",
+              "slot": 6
+            },
+            {
+              "display": {
+                "kind": "pan",
+                "source": "convention"
+              },
+              "label": "Dly2 Pan",
+              "printed": "L64–63R",
+              "slot": 7
+            },
+            {
+              "display": {
+                "kind": "identity",
+                "source": "convention",
+                "unit": ""
+              },
+              "label": "Dly1 Level",
+              "printed": "0–127",
+              "slot": 8
+            },
+            {
+              "display": {
+                "kind": "identity",
+                "source": "convention",
+                "unit": ""
+              },
+              "label": "Dly2 Level",
+              "printed": "0–127",
+              "slot": 9
+            }
+          ],
+          "type": 7
+        },
+        {
+          "name": "3Tap PanDly",
+          "slots": [
+            {
+              "display": {
+                "kind": "labels",
+                "labels": [
+                  "OFF",
+                  "ON"
+                ],
+                "source": "convention"
+              },
+              "label": "Dly Sync",
+              "printed": "OFF, ON",
+              "slot": 1
+            },
+            {
+              "display": {
+                "kind": "identity",
+                "source": "convention",
+                "unit": ""
+              },
+              "label": "Dly Msec",
+              "printed": "1–2600",
+              "slot": 2
+            },
+            {
+              "display": {
+                "kind": "labels",
+                "labels": [
+                  "1/64T",
+                  "1/64",
+                  "1/32T",
+                  "1/32",
+                  "1/16T",
+                  "1/32.",
+                  "1/16",
+                  "1/8T",
+                  "1/16.",
+                  "1/8",
+                  "1/4T",
+                  "1/8.",
+                  "1/4",
+                  "1/2T",
+                  "1/4.",
+                  "1/2",
+                  "1T",
+                  "1/2.",
+                  "1",
+                  "2T",
+                  "1.",
+                  "2"
+                ],
+                "source": "convention"
+              },
+              "label": "Dly Note",
+              "printed": "the note list",
+              "slot": 3
+            },
+            {
+              "display": {
+                "kind": "offset",
+                "offset": 0,
+                "plus": true,
+                "source": "convention",
+                "unit": "%"
+              },
+              "label": "Feedback",
+              "printed": "-98–+98 [%]",
+              "slot": 4
+            },
+            {
+              "display": {
+                "kind": "labels",
+                "labels": [
+                  "200Hz",
+                  "250Hz",
+                  "315Hz",
+                  "400Hz",
+                  "500Hz",
+                  "630Hz",
+                  "800Hz",
+                  "1000Hz",
+                  "1250Hz",
+                  "1600Hz",
+                  "2000Hz",
+                  "2500Hz",
+                  "3150Hz",
+                  "4000Hz",
+                  "5000Hz",
+                  "6300Hz",
+                  "8000Hz",
+                  "BYPASS"
+                ],
+                "source": "convention"
+              },
+              "label": "HF Damp",
+              "printed": "200–8000 [Hz], BYPASS",
+              "slot": 5
+            },
+            {
+              "display": {
+                "kind": "pan",
+                "source": "convention"
+              },
+              "label": "Dly1 Pan",
+              "printed": "L64–63R",
+              "slot": 6
+            },
+            {
+              "display": {
+                "kind": "pan",
+                "source": "convention"
+              },
+              "label": "Dly2 Pan",
+              "printed": "L64–63R",
+              "slot": 7
+            },
+            {
+              "display": {
+                "kind": "pan",
+                "source": "convention"
+              },
+              "label": "Dly3 Pan",
+              "printed": "L64–63R",
+              "slot": 8
+            },
+            {
+              "display": {
+                "kind": "identity",
+                "source": "convention",
+                "unit": ""
+              },
+              "label": "Dly1 Level",
+              "printed": "0–127",
+              "slot": 9
+            },
+            {
+              "display": {
+                "kind": "identity",
+                "source": "convention",
+                "unit": ""
+              },
+              "label": "Dly2 Level",
+              "printed": "0–127",
+              "slot": 10
+            },
+            {
+              "display": {
+                "kind": "identity",
+                "source": "convention",
+                "unit": ""
+              },
+              "label": "Dly3 Level",
+              "printed": "0–127",
+              "slot": 11
+            }
+          ],
+          "type": 8
+        },
+        {
+          "name": "JUNO Chorus",
+          "slots": [
+            {
+              "display": {
+                "kind": "labels",
+                "labels": [
+                  "I",
+                  "II",
+                  "I+II",
+                  "JX I",
+                  "JX II"
+                ],
+                "source": "convention"
+              },
+              "label": "Mode",
+              "printed": "I, II, I+II, JX I, JX II",
+              "slot": 1
+            },
+            {
+              "display": {
+                "kind": "identity",
+                "source": "convention",
+                "unit": ""
+              },
+              "label": "Noise Level",
+              "printed": "0–127",
+              "slot": 2
+            }
+          ],
+          "type": 9
+        },
+        {
+          "name": "JV Chorus",
+          "slots": [
+            {
+              "display": {
+                "kind": "labels",
+                "labels": [
+                  "OFF",
+                  "LPF",
+                  "HPF"
+                ],
+                "source": "convention"
+              },
+              "label": "Filter Type",
+              "printed": "OFF, LPF, HPF",
+              "slot": 1
+            },
+            {
+              "display": {
+                "kind": "raw",
+                "source": "none"
+              },
+              "label": "Cutoff Freq",
+              "printed": "200–8000 [Hz]",
+              "slot": 2
+            },
+            {
+              "display": {
+                "kind": "raw",
+                "source": "none"
+              },
+              "label": "Pre Delay",
+              "printed": "0.0–100.0 [ms]",
+              "slot": 3
+            },
+            {
+              "display": {
+                "kind": "labels",
+                "labels": [
+                  "OFF",
+                  "ON"
+                ],
+                "source": "convention"
+              },
+              "label": "Rate Sync",
+              "printed": "OFF, ON",
+              "slot": 4
+            },
+            {
+              "display": {
+                "kind": "raw",
+                "source": "none"
+              },
+              "label": "Rate Hz",
+              "printed": "0.05–10.00 [Hz]",
+              "slot": 5
+            },
+            {
+              "display": {
+                "kind": "labels",
+                "labels": [
+                  "1/64T",
+                  "1/64",
+                  "1/32T",
+                  "1/32",
+                  "1/16T",
+                  "1/32.",
+                  "1/16",
+                  "1/8T",
+                  "1/16.",
+                  "1/8",
+                  "1/4T",
+                  "1/8.",
+                  "1/4",
+                  "1/2T",
+                  "1/4.",
+                  "1/2",
+                  "1T",
+                  "1/2.",
+                  "1",
+                  "2T",
+                  "1.",
+                  "2"
+                ],
+                "source": "convention"
+              },
+              "label": "Rate Note",
+              "printed": "the note list",
+              "slot": 6
+            },
+            {
+              "display": {
+                "kind": "identity",
+                "source": "convention",
+                "unit": ""
+              },
+              "label": "Depth",
+              "printed": "0–127",
+              "slot": 7
+            },
+            {
+              "display": {
+                "kind": "identity",
+                "source": "convention",
+                "unit": "deg"
+              },
+              "label": "Phase",
+              "printed": "0–180 [deg]",
+              "slot": 8
+            },
+            {
+              "display": {
+                "kind": "identity",
+                "source": "convention",
+                "unit": ""
+              },
+              "label": "Feedback",
+              "printed": "0–127",
+              "slot": 9
+            }
+          ],
+          "type": 10
+        }
+      ]
+    },
+    "MFX": {
+      "by": "Type (* appendix 1)",
+      "missing": "The MFX pages (40-75) were not readable. Every MFX slot shows as Parameter n with its wire value.",
+      "types": []
+    },
+    "Reverb": {
+      "by": "Reverb Type",
+      "evidence": [
+        {
+          "page": 10,
+          "param": "per type",
+          "printed": "page 10",
+          "source": "pg06",
+          "where": "Reverb Parameters"
+        }
+      ],
+      "types": [
+        {
+          "name": "INTEGRA7Rev",
+          "slots": [
+            {
+              "display": {
+                "kind": "labels",
+                "labels": [
+                  "ROOM1",
+                  "ROOM2",
+                  "HALL1",
+                  "HALL2",
+                  "PLATE"
+                ],
+                "source": "convention"
+              },
+              "label": "Char",
+              "printed": "ROOM1, ROOM2, HALL1, HALL2, PLATE",
+              "slot": 1
+            },
+            {
+              "display": {
+                "kind": "identity",
+                "source": "convention",
+                "unit": ""
+              },
+              "label": "PreDelay",
+              "printed": "0–100",
+              "slot": 2
+            },
+            {
+              "display": {
+                "kind": "raw",
+                "source": "none"
+              },
+              "label": "Time",
+              "printed": "0.1–10.0 [sec]",
+              "slot": 3
+            },
+            {
+              "display": {
+                "kind": "identity",
+                "source": "convention",
+                "unit": ""
+              },
+              "label": "Density",
+              "printed": "0–127",
+              "slot": 4
+            },
+            {
+              "display": {
+                "kind": "identity",
+                "source": "convention",
+                "unit": ""
+              },
+              "label": "Diffusion",
+              "printed": "0–127",
+              "slot": 5
+            },
+            {
+              "display": {
+                "kind": "identity",
+                "source": "convention",
+                "unit": ""
+              },
+              "label": "LF Damp",
+              "printed": "0–100",
+              "slot": 6
+            },
+            {
+              "display": {
+                "kind": "identity",
+                "source": "convention",
+                "unit": ""
+              },
+              "label": "HF Damp",
+              "printed": "0–100",
+              "slot": 7
+            },
+            {
+              "display": {
+                "kind": "identity",
+                "source": "convention",
+                "unit": ""
+              },
+              "label": "Spread",
+              "printed": "0–127",
+              "slot": 8
+            },
+            {
+              "display": {
+                "kind": "identity",
+                "source": "convention",
+                "unit": ""
+              },
+              "label": "Tone",
+              "printed": "0–127",
+              "slot": 9
+            }
+          ],
+          "type": 1
+        },
+        {
+          "name": "Warm Hall",
+          "slots": [
+            {
+              "display": {
+                "kind": "raw",
+                "source": "none"
+              },
+              "label": "PreDelay",
+              "printed": "0.0–100.0",
+              "slot": 1
+            },
+            {
+              "display": {
+                "kind": "raw",
+                "source": "none"
+              },
+              "label": "Time",
+              "printed": "0.3–30.0 [sec]",
+              "slot": 2
+            },
+            {
+              "display": {
+                "kind": "labels",
+                "labels": [
+                  "16Hz",
+                  "20Hz",
+                  "25Hz",
+                  "32Hz",
+                  "40Hz",
+                  "50Hz",
+                  "63Hz",
+                  "80Hz",
+                  "100Hz",
+                  "125Hz",
+                  "160Hz",
+                  "200Hz",
+                  "250Hz",
+                  "315Hz",
+                  "400Hz",
+                  "500Hz",
+                  "630Hz",
+                  "800Hz",
+                  "1000Hz",
+                  "1250Hz",
+                  "1600Hz",
+                  "2000Hz",
+                  "2500Hz",
+                  "3150Hz",
+                  "4000Hz",
+                  "5000Hz",
+                  "6300Hz",
+                  "8000Hz",
+                  "10000Hz",
+                  "12500Hz",
+                  "15000Hz",
+                  "BYPASS"
+                ],
+                "source": "convention"
+              },
+              "label": "Pre LPF",
+              "printed": "16–15000 [Hz], BYPASS",
+              "slot": 3
+            },
+            {
+              "display": {
+                "kind": "labels",
+                "labels": [
+                  "BYPASS",
+                  "16Hz",
+                  "20Hz",
+                  "25Hz",
+                  "32Hz",
+                  "40Hz",
+                  "50Hz",
+                  "63Hz",
+                  "80Hz",
+                  "100Hz",
+                  "125Hz",
+                  "160Hz",
+                  "200Hz",
+                  "250Hz",
+                  "315Hz",
+                  "400Hz",
+                  "500Hz",
+                  "630Hz",
+                  "800Hz",
+                  "1000Hz",
+                  "1250Hz",
+                  "1600Hz",
+                  "2000Hz",
+                  "2500Hz",
+                  "3150Hz",
+                  "4000Hz",
+                  "5000Hz",
+                  "6300Hz",
+                  "8000Hz",
+                  "10000Hz",
+                  "12500Hz",
+                  "15000Hz"
+                ],
+                "source": "convention"
+              },
+              "label": "Pre HPF",
+              "printed": "BYPASS, 16–15000 [Hz]",
+              "slot": 4
+            },
+            {
+              "display": {
+                "kind": "labels",
+                "labels": [
+                  "16Hz",
+                  "20Hz",
+                  "25Hz",
+                  "32Hz",
+                  "40Hz",
+                  "50Hz",
+                  "63Hz",
+                  "80Hz",
+                  "100Hz",
+                  "125Hz",
+                  "160Hz",
+                  "200Hz",
+                  "250Hz",
+                  "315Hz",
+                  "400Hz",
+                  "500Hz",
+                  "630Hz",
+                  "800Hz",
+                  "1000Hz",
+                  "1250Hz",
+                  "1600Hz",
+                  "2000Hz",
+                  "2500Hz",
+                  "3150Hz",
+                  "4000Hz",
+                  "5000Hz",
+                  "6300Hz",
+                  "8000Hz",
+                  "10000Hz",
+                  "12500Hz",
+                  "15000Hz",
+                  "BYPASS"
+                ],
+                "source": "convention"
+              },
+              "label": "PreLpLPF",
+              "printed": "16–15000 [Hz], BYPASS",
+              "slot": 5
+            },
+            {
+              "display": {
+                "kind": "identity",
+                "source": "convention",
+                "unit": ""
+              },
+              "label": "Diffusion",
+              "printed": "0–127",
+              "slot": 6
+            },
+            {
+              "display": {
+                "kind": "labels",
+                "labels": [
+                  "1000Hz",
+                  "1250Hz",
+                  "1600Hz",
+                  "2000Hz",
+                  "2500Hz",
+                  "3150Hz",
+                  "4000Hz",
+                  "5000Hz",
+                  "6300Hz",
+                  "8000Hz"
+                ],
+                "source": "convention"
+              },
+              "label": "HF Damp F",
+              "printed": "1000–8000 [Hz]",
+              "slot": 7
+            },
+            {
+              "display": {
+                "kind": "raw",
+                "source": "none"
+              },
+              "label": "HF Damp R",
+              "printed": "0.1–1.0",
+              "slot": 8
+            }
+          ],
+          "type": 2
+        },
+        {
+          "name": "Hall",
+          "slots": [
+            {
+              "display": {
+                "kind": "raw",
+                "source": "none"
+              },
+              "label": "PreDelay",
+              "printed": "0.0–100.0",
+              "slot": 1
+            },
+            {
+              "display": {
+                "kind": "identity",
+                "source": "convention",
+                "unit": ""
+              },
+              "label": "Time",
+              "printed": "0–127",
+              "slot": 2
+            },
+            {
+              "display": {
+                "kind": "identity",
+                "source": "convention",
+                "unit": ""
+              },
+              "label": "Size",
+              "printed": "1–8",
+              "slot": 3
+            },
+            {
+              "display": {
+                "kind": "labels",
+                "labels": [
+                  "160Hz",
+                  "200Hz",
+                  "250Hz",
+                  "320Hz",
+                  "400Hz",
+                  "500Hz",
+                  "640Hz",
+                  "800Hz",
+                  "1000Hz",
+                  "1250Hz",
+                  "1600Hz",
+                  "2000Hz",
+                  "2500Hz",
+                  "3200Hz",
+                  "4000Hz",
+                  "5000Hz",
+                  "6400Hz",
+                  "8000Hz",
+                  "10000Hz",
+                  "12500Hz",
+                  "BYPASS"
+                ],
+                "source": "convention"
+              },
+              "label": "High Cut",
+              "printed": "160–12500 [Hz], BYPASS",
+              "slot": 4
+            },
+            {
+              "display": {
+                "kind": "identity",
+                "source": "convention",
+                "unit": ""
+              },
+              "label": "Density",
+              "printed": "0–127",
+              "slot": 5
+            },
+            {
+              "display": {
+                "kind": "identity",
+                "source": "convention",
+                "unit": ""
+              },
+              "label": "Diffusion",
+              "printed": "0–127",
+              "slot": 6
+            },
+            {
+              "display": {
+                "kind": "labels",
+                "labels": [
+                  "50Hz",
+                  "64Hz",
+                  "80Hz",
+                  "100Hz",
+                  "125Hz",
+                  "160Hz",
+                  "200Hz",
+                  "250Hz",
+                  "320Hz",
+                  "400Hz",
+                  "500Hz",
+                  "640Hz",
+                  "800Hz",
+                  "1000Hz",
+                  "1250Hz",
+                  "1600Hz",
+                  "2000Hz",
+                  "2500Hz",
+                  "3200Hz",
+                  "4000Hz"
+                ],
+                "source": "convention"
+              },
+              "label": "LF Damp F",
+              "printed": "50–4000 [Hz]",
+              "slot": 7
+            },
+            {
+              "display": {
+                "kind": "offset",
+                "offset": 0,
+                "plus": true,
+                "source": "convention",
+                "unit": "dB"
+              },
+              "label": "LF Damp G",
+              "printed": "-36–0 [dB]",
+              "slot": 8
+            },
+            {
+              "display": {
+                "kind": "labels",
+                "labels": [
+                  "4000Hz",
+                  "5000Hz",
+                  "6400Hz",
+                  "8000Hz",
+                  "10000Hz",
+                  "12500Hz"
+                ],
+                "source": "convention"
+              },
+              "label": "HF DampF",
+              "printed": "4000–12500 [Hz]",
+              "slot": 9
+            },
+            {
+              "display": {
+                "kind": "offset",
+                "offset": 0,
+                "plus": true,
+                "source": "convention",
+                "unit": "dB"
+              },
+              "label": "HF Damp G",
+              "printed": "-36–0 [dB]",
+              "slot": 10
+            }
+          ],
+          "type": 3
+        },
+        {
+          "name": "GS Reverb",
+          "slots": [
+            {
+              "display": {
+                "kind": "labels",
+                "labels": [
+                  "ROOM1",
+                  "ROOM2",
+                  "ROOM3",
+                  "HALL1",
+                  "HALL2",
+                  "PLATE",
+                  "DELAY",
+                  "PAN-DELAY"
+                ],
+                "source": "convention"
+              },
+              "label": "Char",
+              "printed": "ROOM1 … PAN-DELAY",
+              "slot": 1
+            },
+            {
+              "display": {
+                "kind": "identity",
+                "source": "convention",
+                "unit": ""
+              },
+              "label": "Pre LPF",
+              "printed": "0–7",
+              "slot": 2
+            },
+            {
+              "display": {
+                "kind": "identity",
+                "source": "convention",
+                "unit": ""
+              },
+              "label": "Time",
+              "printed": "0–127",
+              "slot": 3
+            },
+            {
+              "display": {
+                "kind": "identity",
+                "source": "convention",
+                "unit": ""
+              },
+              "label": "Feedback",
+              "printed": "0–127",
+              "slot": 4
+            }
+          ],
+          "type": 4
+        },
+        {
+          "name": "SRV-2000",
+          "slots": [
+            {
+              "display": {
+                "kind": "labels",
+                "labels": [
+                  "R0.3",
+                  "R1.0",
+                  "R7.0",
+                  "R15",
+                  "R22",
+                  "R26",
+                  "R32",
+                  "R37",
+                  "H15",
+                  "H22",
+                  "H26",
+                  "H32",
+                  "H37",
+                  "P-B",
+                  "P-A"
+                ],
+                "source": "convention"
+              },
+              "label": "Selection",
+              "printed": "R0.3 … P-A",
+              "slot": 1
+            },
+            {
+              "display": {
+                "kind": "identity",
+                "source": "convention",
+                "unit": ""
+              },
+              "label": "PreDelay",
+              "printed": "0–160",
+              "slot": 2
+            },
+            {
+              "display": {
+                "kind": "raw",
+                "source": "none"
+              },
+              "label": "Time",
+              "printed": "0.1–99.0 [sec]",
+              "slot": 3
+            },
+            {
+              "display": {
+                "kind": "raw",
+                "source": "none"
+              },
+              "label": "HF Damp",
+              "printed": "0.05–1.00",
+              "slot": 4
+            },
+            {
+              "display": {
+                "kind": "identity",
+                "source": "convention",
+                "unit": ""
+              },
+              "label": "Density",
+              "printed": "0–9",
+              "slot": 5
+            },
+            {
+              "display": {
+                "kind": "identity",
+                "source": "convention",
+                "unit": ""
+              },
+              "label": "Attack Gain",
+              "printed": "0–9",
+              "slot": 6
+            },
+            {
+              "display": {
+                "kind": "identity",
+                "source": "convention",
+                "unit": ""
+              },
+              "label": "Attack Time",
+              "printed": "0–9",
+              "slot": 7
+            },
+            {
+              "display": {
+                "kind": "identity",
+                "source": "convention",
+                "unit": ""
+              },
+              "label": "ER Density",
+              "printed": "0–9",
+              "slot": 8
+            },
+            {
+              "display": {
+                "kind": "identity",
+                "source": "convention",
+                "unit": ""
+              },
+              "label": "ER Level",
+              "printed": "0–99",
+              "slot": 9
+            },
+            {
+              "display": {
+                "kind": "raw",
+                "source": "none"
+              },
+              "label": "Low Freq",
+              "printed": "0.04–1.00 [kHz]",
+              "slot": 10
+            },
+            {
+              "display": {
+                "kind": "offset",
+                "offset": 0,
+                "plus": true,
+                "source": "convention",
+                "unit": "dB"
+              },
+              "label": "Low Gain",
+              "printed": "-24–+12 [dB]",
+              "slot": 11
+            },
+            {
+              "display": {
+                "kind": "raw",
+                "source": "none"
+              },
+              "label": "Mid Freq",
+              "printed": "0.25–9.99 [kHz]",
+              "slot": 12
+            },
+            {
+              "display": {
+                "kind": "offset",
+                "offset": 0,
+                "plus": true,
+                "source": "convention",
+                "unit": "dB"
+              },
+              "label": "Mid Gain",
+              "printed": "-24–+12 [dB]",
+              "slot": 13
+            },
+            {
+              "display": {
+                "kind": "raw",
+                "source": "none"
+              },
+              "label": "Mid Q",
+              "printed": "0.2–9.0",
+              "slot": 14
+            },
+            {
+              "display": {
+                "kind": "raw",
+                "source": "none"
+              },
+              "label": "HighFreq",
+              "printed": "0.80–9.99 [kHz]",
+              "slot": 15
+            },
+            {
+              "display": {
+                "kind": "offset",
+                "offset": 0,
+                "plus": true,
+                "source": "convention",
+                "unit": "dB"
+              },
+              "label": "HighGain",
+              "printed": "-24–+12 [dB]",
+              "slot": 16
+            },
+            {
+              "display": {
+                "kind": "raw",
+                "source": "none"
+              },
+              "label": "High Q",
+              "printed": "0.2–9.0",
+              "slot": 17
+            }
+          ],
+          "type": 5
+        },
+        {
+          "name": "SRV-2000NL",
+          "slots": [
+            {
+              "display": {
+                "kind": "identity",
+                "source": "convention",
+                "unit": ""
+              },
+              "label": "PreDelay",
+              "printed": "0–120",
+              "slot": 1
+            },
+            {
+              "display": {
+                "kind": "raw",
+                "source": "none"
+              },
+              "label": "ReverbTime",
+              "printed": "-0.9–+99.0 [sec]",
+              "slot": 2
+            },
+            {
+              "display": {
+                "kind": "identity",
+                "source": "convention",
+                "unit": ""
+              },
+              "label": "GateTime",
+              "printed": "10–450",
+              "slot": 3
+            },
+            {
+              "display": {
+                "kind": "raw",
+                "source": "none"
+              },
+              "label": "Low Freq",
+              "printed": "0.04–1.00 [kHz]",
+              "slot": 4
+            },
+            {
+              "display": {
+                "kind": "offset",
+                "offset": 0,
+                "plus": true,
+                "source": "convention",
+                "unit": "dB"
+              },
+              "label": "Low Gain",
+              "printed": "-24–+12 [dB]",
+              "slot": 5
+            },
+            {
+              "display": {
+                "kind": "raw",
+                "source": "none"
+              },
+              "label": "Mid Freq",
+              "printed": "0.25–9.99 [kHz]",
+              "slot": 6
+            },
+            {
+              "display": {
+                "kind": "offset",
+                "offset": 0,
+                "plus": true,
+                "source": "convention",
+                "unit": "dB"
+              },
+              "label": "Mid Gain",
+              "printed": "-24–+12 [dB]",
+              "slot": 7
+            },
+            {
+              "display": {
+                "kind": "raw",
+                "source": "none"
+              },
+              "label": "Mid Q",
+              "printed": "0.2–9.0",
+              "slot": 8
+            },
+            {
+              "display": {
+                "kind": "raw",
+                "source": "none"
+              },
+              "label": "HighFreq",
+              "printed": "0.80–9.99 [kHz]",
+              "slot": 9
+            },
+            {
+              "display": {
+                "kind": "offset",
+                "offset": 0,
+                "plus": true,
+                "source": "convention",
+                "unit": "dB"
+              },
+              "label": "HighGain",
+              "printed": "-24–+12 [dB]",
+              "slot": 10
+            },
+            {
+              "display": {
+                "kind": "raw",
+                "source": "none"
+              },
+              "label": "Hi Q",
+              "printed": "0.2–9.0",
+              "slot": 11
+            }
+          ],
+          "type": 6
+        },
+        {
+          "name": "GM2 Reverb",
+          "slots": [
+            {
+              "display": {
+                "kind": "labels",
+                "labels": [
+                  "SMALL ROOM",
+                  "MEDIUM ROOM",
+                  "LARGE ROOM",
+                  "MEDIUM HALL",
+                  "LARGE HALL",
+                  "PLATE"
+                ],
+                "source": "convention"
+              },
+              "label": "Char",
+              "printed": "SMALL ROOM … PLATE",
+              "slot": 1
+            },
+            {
+              "display": {
+                "kind": "identity",
+                "source": "convention",
+                "unit": ""
+              },
+              "label": "Time",
+              "printed": "0–127",
+              "slot": 2
+            }
+          ],
+          "type": 7
+        },
+        {
+          "name": "Gate Reverb",
+          "slots": [
+            {
+              "display": {
+                "kind": "labels",
+                "labels": [
+                  "NORMAL",
+                  "REVERSE",
+                  "SWEEP1",
+                  "SWEEP2"
+                ],
+                "source": "convention"
+              },
+              "label": "Type",
+              "printed": "NORMAL, REVERSE, SWEEP1, SWEEP2",
+              "slot": 1
+            },
+            {
+              "display": {
+                "kind": "raw",
+                "source": "none"
+              },
+              "label": "Pre Delay",
+              "printed": "0.0–100.0 [ms]",
+              "slot": 2
+            },
+            {
+              "display": {
+                "kind": "identity",
+                "source": "convention",
+                "unit": "ms"
+              },
+              "label": "Gate Time",
+              "printed": "5–500 [ms]",
+              "slot": 3
+            }
+          ],
+          "type": 8
+        }
+      ]
+    },
+    "Scene Delay": {
+      "by": "Chorus Type",
+      "evidence": [
+        {
+          "page": 9,
+          "param": "per type",
+          "printed": "page 9",
+          "source": "pg06",
+          "where": "Delay Parameters"
+        }
+      ],
+      "layout": "Chorus",
+      "types": [
+        {
+          "name": "Delay",
+          "slots": [
+            {
+              "display": {
+                "kind": "labels",
+                "labels": [
+                  "OFF",
+                  "ON"
+                ],
+                "source": "convention"
+              },
+              "label": "Dly Sync",
+              "printed": "OFF, ON",
+              "slot": 1
+            },
+            {
+              "display": {
+                "kind": "identity",
+                "source": "convention",
+                "unit": ""
+              },
+              "label": "Dly Msec",
+              "printed": "1–1300",
+              "slot": 2
+            },
+            {
+              "display": {
+                "kind": "labels",
+                "labels": [
+                  "1/64T",
+                  "1/64",
+                  "1/32T",
+                  "1/32",
+                  "1/16T",
+                  "1/32.",
+                  "1/16",
+                  "1/8T",
+                  "1/16.",
+                  "1/8",
+                  "1/4T",
+                  "1/8.",
+                  "1/4",
+                  "1/2T",
+                  "1/4.",
+                  "1/2",
+                  "1T",
+                  "1/2.",
+                  "1",
+                  "2T",
+                  "1.",
+                  "2"
+                ],
+                "source": "convention"
+              },
+              "label": "Dly Note",
+              "printed": "the note list",
+              "slot": 3
+            },
+            {
+              "display": {
+                "kind": "offset",
+                "offset": 0,
+                "plus": true,
+                "source": "convention",
+                "unit": "%"
+              },
+              "label": "Feedback",
+              "printed": "-98–+98 [%]",
+              "slot": 4
+            },
+            {
+              "display": {
+                "kind": "labels",
+                "labels": [
+                  "200Hz",
+                  "250Hz",
+                  "315Hz",
+                  "400Hz",
+                  "500Hz",
+                  "630Hz",
+                  "800Hz",
+                  "1000Hz",
+                  "1250Hz",
+                  "1600Hz",
+                  "2000Hz",
+                  "2500Hz",
+                  "3150Hz",
+                  "4000Hz",
+                  "5000Hz",
+                  "6300Hz",
+                  "8000Hz",
+                  "BYPASS"
+                ],
+                "source": "convention"
+              },
+              "label": "HF Damp",
+              "printed": "200–8000 [Hz], BYPASS",
+              "slot": 5
+            }
+          ],
+          "type": 1
+        },
+        {
+          "name": "T-Ctrl Dly",
+          "slots": [
+            {
+              "display": {
+                "kind": "labels",
+                "labels": [
+                  "OFF",
+                  "ON"
+                ],
+                "source": "convention"
+              },
+              "label": "Dly Sync",
+              "printed": "OFF, ON",
+              "slot": 1
+            },
+            {
+              "display": {
+                "kind": "identity",
+                "source": "convention",
+                "unit": ""
+              },
+              "label": "Dly Msec",
+              "printed": "1–1300",
+              "slot": 2
+            },
+            {
+              "display": {
+                "kind": "labels",
+                "labels": [
+                  "1/64T",
+                  "1/64",
+                  "1/32T",
+                  "1/32",
+                  "1/16T",
+                  "1/32.",
+                  "1/16",
+                  "1/8T",
+                  "1/16.",
+                  "1/8",
+                  "1/4T",
+                  "1/8.",
+                  "1/4",
+                  "1/2T",
+                  "1/4.",
+                  "1/2",
+                  "1T",
+                  "1/2.",
+                  "1",
+                  "2T",
+                  "1.",
+                  "2"
+                ],
+                "source": "convention"
+              },
+              "label": "Dly Note",
+              "printed": "the note list",
+              "slot": 3
+            },
+            {
+              "display": {
+                "kind": "identity",
+                "source": "convention",
+                "unit": ""
+              },
+              "label": "Acceleration",
+              "printed": "0–15",
+              "slot": 4
+            },
+            {
+              "display": {
+                "kind": "offset",
+                "offset": 0,
+                "plus": true,
+                "source": "convention",
+                "unit": "%"
+              },
+              "label": "Feedback",
+              "printed": "-98–+98 [%]",
+              "slot": 5
+            },
+            {
+              "display": {
+                "kind": "labels",
+                "labels": [
+                  "200Hz",
+                  "250Hz",
+                  "315Hz",
+                  "400Hz",
+                  "500Hz",
+                  "630Hz",
+                  "800Hz",
+                  "1000Hz",
+                  "1250Hz",
+                  "1600Hz",
+                  "2000Hz",
+                  "2500Hz",
+                  "3150Hz",
+                  "4000Hz",
+                  "5000Hz",
+                  "6300Hz",
+                  "8000Hz",
+                  "BYPASS"
+                ],
+                "source": "convention"
+              },
+              "label": "HF Damp",
+              "printed": "200–8000 [Hz], BYPASS",
+              "slot": 6
+            }
+          ],
+          "type": 2
+        },
+        {
+          "name": "Delay→Trem",
+          "slots": [
+            {
+              "display": {
+                "kind": "labels",
+                "labels": [
+                  "MONAURAL",
+                  "STEREO"
+                ],
+                "source": "convention"
+              },
+              "label": "Input",
+              "printed": "MONAURAL, STEREO",
+              "slot": 1
+            },
+            {
+              "display": {
+                "kind": "labels",
+                "labels": [
+                  "OFF",
+                  "ON"
+                ],
+                "source": "convention"
+              },
+              "label": "Dly Sync",
+              "printed": "OFF, ON",
+              "slot": 2
+            },
+            {
+              "display": {
+                "kind": "identity",
+                "source": "convention",
+                "unit": ""
+              },
+              "label": "Dly Msec",
+              "printed": "1–1300",
+              "slot": 3
+            },
+            {
+              "display": {
+                "kind": "labels",
+                "labels": [
+                  "1/64T",
+                  "1/64",
+                  "1/32T",
+                  "1/32",
+                  "1/16T",
+                  "1/32.",
+                  "1/16",
+                  "1/8T",
+                  "1/16.",
+                  "1/8",
+                  "1/4T",
+                  "1/8.",
+                  "1/4",
+                  "1/2T",
+                  "1/4.",
+                  "1/2",
+                  "1T",
+                  "1/2.",
+                  "1",
+                  "2T",
+                  "1.",
+                  "2"
+                ],
+                "source": "convention"
+              },
+              "label": "Dly Note",
+              "printed": "the note list",
+              "slot": 4
+            },
+            {
+              "display": {
+                "kind": "offset",
+                "offset": 0,
+                "plus": true,
+                "source": "convention",
+                "unit": "%"
+              },
+              "label": "Feedback",
+              "printed": "-98–+98 [%]",
+              "slot": 5
+            },
+            {
+              "display": {
+                "kind": "labels",
+                "labels": [
+                  "200Hz",
+                  "250Hz",
+                  "315Hz",
+                  "400Hz",
+                  "500Hz",
+                  "630Hz",
+                  "800Hz",
+                  "1000Hz",
+                  "1250Hz",
+                  "1600Hz",
+                  "2000Hz",
+                  "2500Hz",
+                  "3150Hz",
+                  "4000Hz",
+                  "5000Hz",
+                  "6300Hz",
+                  "8000Hz",
+                  "BYPASS"
+                ],
+                "source": "convention"
+              },
+              "label": "HF Damp",
+              "printed": "200–8000 [Hz], BYPASS",
+              "slot": 6
+            },
+            {
+              "display": {
+                "kind": "labels",
+                "labels": [
+                  "OFF",
+                  "ON"
+                ],
+                "source": "convention"
+              },
+              "label": "Trm Switch",
+              "printed": "OFF, ON",
+              "slot": 7
+            },
+            {
+              "display": {
+                "kind": "labels",
+                "labels": [
+                  "TRI",
+                  "SQR",
+                  "SIN",
+                  "SAW1",
+                  "SAW2",
+                  "TRP"
+                ],
+                "source": "convention"
+              },
+              "label": "Trm ModWave",
+              "printed": "TRI, SQR, SIN, SAW1, SAW2, TRP",
+              "slot": 8
+            },
+            {
+              "display": {
+                "kind": "labels",
+                "labels": [
+                  "OFF",
+                  "ON"
+                ],
+                "source": "convention"
+              },
+              "label": "Trm Sync",
+              "printed": "OFF, ON",
+              "slot": 9
+            },
+            {
+              "display": {
+                "kind": "raw",
+                "source": "none"
+              },
+              "label": "Trm Hz",
+              "printed": "0.05–10.00 [Hz]",
+              "slot": 10
+            },
+            {
+              "display": {
+                "kind": "labels",
+                "labels": [
+                  "1/64T",
+                  "1/64",
+                  "1/32T",
+                  "1/32",
+                  "1/16T",
+                  "1/32.",
+                  "1/16",
+                  "1/8T",
+                  "1/16.",
+                  "1/8",
+                  "1/4T",
+                  "1/8.",
+                  "1/4",
+                  "1/2T",
+                  "1/4.",
+                  "1/2",
+                  "1T",
+                  "1/2.",
+                  "1",
+                  "2T",
+                  "1.",
+                  "2"
+                ],
+                "source": "convention"
+              },
+              "label": "Trm Note",
+              "printed": "the note list",
+              "slot": 11
+            },
+            {
+              "display": {
+                "kind": "identity",
+                "source": "convention",
+                "unit": ""
+              },
+              "label": "Trm Depth",
+              "printed": "0–127",
+              "slot": 12
+            }
+          ],
+          "type": 3
+        },
+        {
+          "name": "2Tap PanDly",
+          "slots": [
+            {
+              "display": {
+                "kind": "labels",
+                "labels": [
+                  "OFF",
+                  "ON"
+                ],
+                "source": "convention"
+              },
+              "label": "Dly Sync",
+              "printed": "OFF, ON",
+              "slot": 1
+            },
+            {
+              "display": {
+                "kind": "identity",
+                "source": "convention",
+                "unit": ""
+              },
+              "label": "Dly Msec",
+              "printed": "1–1300",
+              "slot": 2
+            },
+            {
+              "display": {
+                "kind": "labels",
+                "labels": [
+                  "1/64T",
+                  "1/64",
+                  "1/32T",
+                  "1/32",
+                  "1/16T",
+                  "1/32.",
+                  "1/16",
+                  "1/8T",
+                  "1/16.",
+                  "1/8",
+                  "1/4T",
+                  "1/8.",
+                  "1/4",
+                  "1/2T",
+                  "1/4.",
+                  "1/2",
+                  "1T",
+                  "1/2.",
+                  "1",
+                  "2T",
+                  "1.",
+                  "2"
+                ],
+                "source": "convention"
+              },
+              "label": "Dly Note",
+              "printed": "the note list",
+              "slot": 3
+            },
+            {
+              "display": {
+                "kind": "offset",
+                "offset": 0,
+                "plus": true,
+                "source": "convention",
+                "unit": "%"
+              },
+              "label": "Feedback",
+              "printed": "-98–+98 [%]",
+              "slot": 4
+            },
+            {
+              "display": {
+                "kind": "labels",
+                "labels": [
+                  "200Hz",
+                  "250Hz",
+                  "315Hz",
+                  "400Hz",
+                  "500Hz",
+                  "630Hz",
+                  "800Hz",
+                  "1000Hz",
+                  "1250Hz",
+                  "1600Hz",
+                  "2000Hz",
+                  "2500Hz",
+                  "3150Hz",
+                  "4000Hz",
+                  "5000Hz",
+                  "6300Hz",
+                  "8000Hz",
+                  "BYPASS"
+                ],
+                "source": "convention"
+              },
+              "label": "HF Damp",
+              "printed": "200–8000 [Hz], BYPASS",
+              "slot": 5
+            },
+            {
+              "display": {
+                "kind": "pan",
+                "source": "convention"
+              },
+              "label": "Dly1 Pan",
+              "printed": "L64–63R",
+              "slot": 6
+            },
+            {
+              "display": {
+                "kind": "pan",
+                "source": "convention"
+              },
+              "label": "Dly2 Pan",
+              "printed": "L64–63R",
+              "slot": 7
+            },
+            {
+              "display": {
+                "kind": "identity",
+                "source": "convention",
+                "unit": ""
+              },
+              "label": "Dly1 Level",
+              "printed": "0–127",
+              "slot": 8
+            },
+            {
+              "display": {
+                "kind": "identity",
+                "source": "convention",
+                "unit": ""
+              },
+              "label": "Dly2 Level",
+              "printed": "0–127",
+              "slot": 9
+            }
+          ],
+          "type": 4
+        },
+        {
+          "name": "3Tap PanDly",
+          "slots": [
+            {
+              "display": {
+                "kind": "labels",
+                "labels": [
+                  "OFF",
+                  "ON"
+                ],
+                "source": "convention"
+              },
+              "label": "Dly Sync",
+              "printed": "OFF, ON",
+              "slot": 1
+            },
+            {
+              "display": {
+                "kind": "identity",
+                "source": "convention",
+                "unit": ""
+              },
+              "label": "Dly Msec",
+              "printed": "1–2600",
+              "slot": 2
+            },
+            {
+              "display": {
+                "kind": "labels",
+                "labels": [
+                  "1/64T",
+                  "1/64",
+                  "1/32T",
+                  "1/32",
+                  "1/16T",
+                  "1/32.",
+                  "1/16",
+                  "1/8T",
+                  "1/16.",
+                  "1/8",
+                  "1/4T",
+                  "1/8.",
+                  "1/4",
+                  "1/2T",
+                  "1/4.",
+                  "1/2",
+                  "1T",
+                  "1/2.",
+                  "1",
+                  "2T",
+                  "1.",
+                  "2"
+                ],
+                "source": "convention"
+              },
+              "label": "Dly Note",
+              "printed": "the note list",
+              "slot": 3
+            },
+            {
+              "display": {
+                "kind": "offset",
+                "offset": 0,
+                "plus": true,
+                "source": "convention",
+                "unit": "%"
+              },
+              "label": "Feedback",
+              "printed": "-98–+98 [%]",
+              "slot": 4
+            },
+            {
+              "display": {
+                "kind": "labels",
+                "labels": [
+                  "200Hz",
+                  "250Hz",
+                  "315Hz",
+                  "400Hz",
+                  "500Hz",
+                  "630Hz",
+                  "800Hz",
+                  "1000Hz",
+                  "1250Hz",
+                  "1600Hz",
+                  "2000Hz",
+                  "2500Hz",
+                  "3150Hz",
+                  "4000Hz",
+                  "5000Hz",
+                  "6300Hz",
+                  "8000Hz",
+                  "BYPASS"
+                ],
+                "source": "convention"
+              },
+              "label": "HF Damp",
+              "printed": "200–8000 [Hz], BYPASS",
+              "slot": 5
+            },
+            {
+              "display": {
+                "kind": "pan",
+                "source": "convention"
+              },
+              "label": "Dly1 Pan",
+              "printed": "L64–63R",
+              "slot": 6
+            },
+            {
+              "display": {
+                "kind": "pan",
+                "source": "convention"
+              },
+              "label": "Dly2 Pan",
+              "printed": "L64–63R",
+              "slot": 7
+            },
+            {
+              "display": {
+                "kind": "pan",
+                "source": "convention"
+              },
+              "label": "Dly3 Pan",
+              "printed": "L64–63R",
+              "slot": 8
+            },
+            {
+              "display": {
+                "kind": "identity",
+                "source": "convention",
+                "unit": ""
+              },
+              "label": "Dly1 Level",
+              "printed": "0–127",
+              "slot": 9
+            },
+            {
+              "display": {
+                "kind": "identity",
+                "source": "convention",
+                "unit": ""
+              },
+              "label": "Dly2 Level",
+              "printed": "0–127",
+              "slot": 10
+            },
+            {
+              "display": {
+                "kind": "identity",
+                "source": "convention",
+                "unit": ""
+              },
+              "label": "Dly3 Level",
+              "printed": "0–127",
+              "slot": 11
+            }
+          ],
+          "type": 5
+        }
+      ]
+    }
+  }
+}

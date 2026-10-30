@@ -1,6 +1,8 @@
 # Controllers for any device: profiles, the wizard and MCP
 
-**Status:** draft 1, 2026-10-01. Design only; nothing is built.
+**Status:** draft 1.1, 2026-10-30. Design only; nothing is built.
+
+- **Draft 1.1 records the owner's answers to §8** and adds initial values from a maker's documents (§3.6).
 
 The owner's words (2026-10-01, verbatim):
 
@@ -133,6 +135,8 @@ This generalises DEVICE-MODEL §2.5:
 - **`when`:** conditions under which the parameter exists. The panel shows it only when they hold. This is the device model deciding what exists, not a skin hiding controls (DEVICE-MODEL §2.5).
 - **`display`:** a converter from VALUE-DISPLAY §3. Converters are generic.
 - **`info`:** help text in the profile's own words, never copied from a manual.
+- **`evidence`:** where a converter came from, when not from the device's MIDI document: the document, the page, and the value as printed (§3.6).
+- **`models`, `subsets`, `blocks`:** a narrower range or set of values per model, and another block's own values (VALUE-DISPLAY §3).
 
 ## 3. The builder, the wizard and MCP
 
@@ -182,7 +186,8 @@ Importers produce draft parameters marked with their source. Nothing imported is
 - **`roland-mi`:** reads your own copy of a Roland MIDI Implementation. `tools/mi-sweep` is its first version. Other Roland MIs may share the same table layout; that is still to check.
 - **`midi-guide`:** the open MIDI CC & NRPN dataset by Pencil Research (midi.guide; github.com/pencilresearch/midi).
   - It has 465 device files as CSV, one row per parameter: section, name, description, CC and NRPN numbers, ranges, default, notes. One of them is "Jupiter-X (Jupiter-Xm)".
-  - Its licence is CC BY-SA 4.0. A profile built from it must credit it and be shared under the same licence (open question 1).
+  - Its licence is CC BY-SA 4.0. **A profile built from it may ship with synthctrlr** (the owner's answer, §8). It credits midi.guide in `sources` and is shared under CC BY-SA 4.0. Importing on a person's own computer works too.
+- **`roland-guide`** (planned): reads your own copy of a Roland Parameter Guide, the manual of what the screen shows, as `roland-mi` reads the MI. Its first use is the Jupiter-Xm guide's pages that the web reader could not reach (VALUE-DISPLAY §10.3).
 - **`csv`:** a plain sheet in synthctrlr's own columns, for typing in a manual's table.
 - **By hand,** in the wizard.
 
@@ -193,7 +198,7 @@ synthctrlr runs an MCP (Model Context Protocol) server, so an AI client (Claude 
 **Where it runs:**
 
 - The MCP server is part of the main side, because the main side owns MIDI and storage (README, process model).
-- It runs first in the standalone app and as `synthctrlr mcp` over stdio (open question 2).
+- It runs first in the standalone app and as `synthctrlr mcp` over stdio (the owner's answer, §8). In mazika, it waits for mazikad.
 - DAW plugins do not host it.
 
 **Two modes:**
@@ -231,6 +236,20 @@ synthctrlr runs an MCP (Model Context Protocol) server, so an AI client (Claude 
 4. **Edit buffer only.** No MCP tool writes the device's memory: "Save to synth…" stays a person's action. System-area writes need the app's confirmation. A recall needs the "Send · Cancel" confirmation shown to the person (DEVICE-MODEL §4.5).
 5. **Paced.** MCP sends go through the same pacing and exclusivity as any edit (DEVICE-MODEL §3.3).
 6. **Logged.** Every MCP operation is in the draft's history, marked "via MCP".
+
+### 3.6 Initial values from a maker's documents
+
+The owner asked for initial values from the maker's PDF or the web, through MCP (the owner's answer 4, §8). So an AI client can fill a draft's values before anyone measures them.
+
+- **The AI client reads.** It reads a PDF the person names, with `profiles.import` or its own tools, or searches the web. synthctrlr's MCP server fetches nothing itself.
+- **It proposes through the builder.** Values arrive with `parameters.upsert`, like any edit to a draft.
+- **Rules:**
+  - Facts only: names, ranges, value lists and units, never a document's text.
+  - Every value carries `evidence`: the document, the page, and the value as printed.
+  - The maker's own documents give `source: "guide"`, shown with no mark. Anything else, or anything inferred, is `convention`, shown as "assumed".
+  - Where a document disagrees with the device's MIDI document, the disagreement is recorded, never settled silently.
+  - The 1:1 check (VALUE-DISPLAY §1) runs on every value. "Match the device" confirms them later.
+- **The first case is the Jupiter-Xm** (VALUE-DISPLAY §10). Its result is `profiles/roland.jupiter-xm/initial-display.json`, which the sweep applies.
 
 ## 4. Snapshots for any device
 
@@ -272,7 +291,7 @@ SNAPSHOT-FORMAT becomes generic (draft 2). The changes:
 **Now (design, no hardware):**
 
 1. The profile schema, as a JSON Schema in this repository.
-2. The Jupiter-Xm profile's skeleton: device, transport, areas and the parameters the sweep can fill. It is generated from your own copy of the MI and is not committed until the owner agrees how profiles built from a maker's document may be shared.
+2. The Jupiter-Xm profile's skeleton: device, transport, areas and the parameters the sweep can fill, with the initial values of VALUE-DISPLAY §10. It is generated from your own copy of the MI. It may be committed and shipped, since it holds facts only, cited (the owner's answer 3, §8).
 3. The builder operations: inputs, outputs and errors, shared by the wizard and MCP.
 4. The MCP tools' input and output schemas.
 
@@ -282,10 +301,25 @@ SNAPSHOT-FORMAT becomes generic (draft 2). The changes:
 2. Then the device tools and the checks on the Jupiter-Xm.
 3. Then the wizard's interface, once aui can be used (its licence and package name, AUI-REQUIREMENTS §5).
 
-## 8. Open questions for the owner
+## 8. The owner's answers
 
-1. **The midi.guide dataset is CC BY-SA 4.0.**
-   - May synthctrlr ship profiles built from it, with credit and under the same licence?
-   - Or should it only import locally, on each person's own computer?
-2. **Where MCP runs first.** Default: the standalone app, plus `synthctrlr mcp` over stdio. In mazika, it waits for mazikad. Is that right?
-3. **Sharing profiles built from a maker's MIDI document** (facts only, cited, like the Jupiter-Xm's): may they be committed to this repository and shipped? DEVICE-MODEL already planned to ship the Jupiter-Xm's.
+The questions were:
+
+1. May synthctrlr ship profiles built from the midi.guide dataset (CC BY-SA 4.0), with credit and under the same licence, or only import them locally?
+2. Where MCP runs first: the standalone app, plus `synthctrlr mcp` over stdio, with mazika waiting for mazikad?
+3. May profiles built from a maker's MIDI document (facts only, cited) be committed to this repository and shipped?
+4. The value-display choices still open (VALUE-DISPLAY §9).
+
+The owner's words (2026-10-01, verbatim):
+
+> 1. sure whatever works
+> 2.yes
+> 3.yes
+> 4. please read the pdf via the mcp or use the mcp to search the web and figure initial values
+
+So:
+
+1. **midi.guide profiles may ship,** credited and under CC BY-SA 4.0. Importing locally works too (§3.4).
+2. **MCP runs first in the standalone app and as `synthctrlr mcp`** (§3.5).
+3. **Profiles built from a maker's documents are committed and shipped,** facts only, cited (§7).
+4. **Initial values come from the maker's documents and the web,** through an AI client over MCP (§3.6). The Jupiter-Xm's are in VALUE-DISPLAY §10. The three display choices of VALUE-DISPLAY §9 were not changed and stay the defaults.
