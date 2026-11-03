@@ -89,6 +89,15 @@ So the file keeps wire values, and the editor converts them to what the synth sh
 > we need an mcp ability to create controller of different synths or midi devices
 
 So synthctrlr builds controllers for any synth or MIDI device from data profiles, through a wizard or an MCP server, and the Jupiter-Xm is its first profile (`CONTROLLER-BUILDER.md`).
+
+**2026-10-01, answering CONTROLLER-BUILDER §8 (1–3) and the value-display choices (4):**
+
+> 1. sure whatever works
+> 2.yes
+> 3.yes
+> 4. please read the pdf via the mcp or use the mcp to search the web and figure initial values
+
+So profiles built from midi.guide may ship, credited and under CC BY-SA 4.0; MCP runs first in the standalone app and as `synthctrlr mcp`; profiles built from a maker's documents are committed and shipped, facts only, cited; and the values the MI leaves out start from Roland's own documents (VALUE-DISPLAY §10, CONTROLLER-BUILDER §3.6). The answer reached this repository on 2026-10-30, when the work moved into the project "tjrb.xyz/mazika:poc".
 - The first skin pack: "Unbranded homage (Recommended)".
 
 The earlier ideas behind this example are logged with dates in `aui-docs/IDEAS.md` on the `owner-ideas` branch:
@@ -158,6 +167,8 @@ The full list is in DEVICE-MODEL §11.
 - **Drum kits, vocoder, expansions:** saved by reference for now.
 - **mazika:** starts in mazika's browser core, moves to mazikad later.
 - **First pack:** an unbranded homage with its own name.
+- **Controllers for any device** (CONTROLLER-BUILDER §8): midi.guide profiles may ship; MCP runs first in the standalone app and as `synthctrlr mcp`; profiles built from a maker's documents are committed.
+- **Value display:** initial values from Roland's documents (VALUE-DISPLAY §10). The three display choices (§9) stay the defaults.
 
 **Still open:**
 
@@ -165,5 +176,4 @@ The full list is in DEVICE-MODEL §11.
    - The owner put snapshot files first ("snapshot files are more important"). `SNAPSHOT-FORMAT.md` specifies the JSON file. Roland-compatible files remain open and are not designed yet.
 2. **Pro Tools (AAX):** left out at first by default. Needed early? Comes after snapshot files.
 3. **Expansions and JUNO-60** on the owner's synth: only matters once the deferred measuring happens.
-4. **Value display** (VALUE-DISPLAY §9): no mark on values from the MI; adjustments apply to the whole definition; adjustments live in the user's folder.
-5. **Controllers for any device** (CONTROLLER-BUILDER §8): whether profiles built from the midi.guide dataset (CC BY-SA 4.0) may be shipped; where MCP runs first; whether profiles built from a maker's MIDI document may be committed and shipped.
+4. **The rest of the Parameter Guide** (VALUE-DISPLAY §10.3): its pages 21–75 hold the JUPITER-X model, the System and the MFX slots. Add the PDF to the project, or allow `static.roland.com` in the cloud environment's network settings.
